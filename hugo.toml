@@ -1,0 +1,5 @@
+baseURL = 'https://www.books.dwhenson.com'
+languageCode = 'en-us'
+title = 'Book Reviews'
+name = 'Dave Henson'
+disableKinds = ['taxonomy', 'term']

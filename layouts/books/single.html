@@ -1,0 +1,10 @@
+{{ define "main" }}
+ <h1>{{ .Params.Title }}</h1>
+ <h2>By {{ .Params.Author }}</h2>
+ <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
+
+{{ $src := print "https://covers.openlibrary.org/b/isbn/" .Params.isbn  "-L.jpg" }}
+
+<img src="{{ $src }}" />
+ {{ .Content }}
+{{ end }}
