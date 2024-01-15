@@ -2,6 +2,7 @@
 title: "A Hero in France"
 author: "Alan Furst"
 date: 2024-01-12
+fiction: true
 pages: 320
 id: T8ACCwAAQBAJ
 rating: 3
