@@ -3,7 +3,7 @@
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
 
-{{ $src := print "https://covers.openlibrary.org/b/isbn/" .Params.isbn  "-L.jpg" }}
+{{ $src := print "https://books.google.com/books/content?id=" .Params.id  "&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api" }}
 
 <img src="{{ $src }}" />
  {{ .Content }}
