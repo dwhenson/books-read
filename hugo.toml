@@ -1,4 +1,4 @@
-baseURL = 'https://www.books.dwhenson.com'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Book Reviews'
 name = 'Dave Henson'
