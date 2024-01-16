@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="" />
+    <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/20240106-the-road.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/20240118-a-hero-in-france.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/images/20240118-a-hero-in-france_hu247d21b81e808afb79f13cbfaf324ee0_23946_600x400_fit_q75_box.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/images/duck_hudb1e8379c65267297ed7076c9df30a56_9699_600x400_fit_box_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/books/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/books/single.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -17,6 +26,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2arFIfdhBJrPt4I5SOqnfXuldIz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -25,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/david.henson/Documents/Personal/book-review-site",
@@ -35,14 +48,18 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/content/books" />
+      <recent name="$PROJECT_DIR$/archetypes" />
+      <recent name="$PROJECT_DIR$/archetypes/books" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,10 +73,73 @@
       <workItem from="1705068714150" duration="618000" />
       <workItem from="1705069348988" duration="11903000" />
       <workItem from="1705162895948" duration="5470000" />
+      <workItem from="1705308994539" duration="1101000" />
+      <workItem from="1705319531117" duration="25218000" />
     </task>
+    <task id="LOCAL-00001" summary="Update base url">
+      <option name="closed" value="true" />
+      <created>1705320382762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705320382762</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add make coffee at home">
+      <option name="closed" value="true" />
+      <created>1705321949210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705321949210</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add book archetype">
+      <option name="closed" value="true" />
+      <created>1705327307953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327307953</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add nested loop for book lists">
+      <option name="closed" value="true" />
+      <created>1705395276730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705395276730</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improve error checking for images">
+      <option name="closed" value="true" />
+      <created>1705396350435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705396350435</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update base url" />
+    <MESSAGE value="Add make coffee at home" />
+    <MESSAGE value="Add book archetype" />
+    <MESSAGE value="Add nested loop for book lists" />
+    <MESSAGE value="Improve error checking for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve error checking for images" />
   </component>
 </project>
