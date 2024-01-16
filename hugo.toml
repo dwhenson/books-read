@@ -1,5 +1,5 @@
 baseURL = '/'
-languageCode = 'en-us'
-title = 'Book Reviews'
+languageCode = 'en-uk'
+title = 'Books Read'
 name = 'Dave Henson'
 disableKinds = ['taxonomy', 'term']

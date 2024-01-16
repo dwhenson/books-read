@@ -1,10 +1,27 @@
 {{ define "main" }}
-  <h1>Books Read</h1>
-  <ul>
-  {{ range .Pages }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-  {{ end }}
-  </ul>
+
+{{ $years := slice }}
+{{ range .Pages }}
+  {{ $year := slicestr .Date 0 4 }}
+  {{ $years = $years | append $year }}
 {{ end }}
+{{ $uniqueYears := $years | uniq }}
+
+<h1>Books Read</h1>
+  {{ range $uniqueYears }}
+<h2> {{ . }} </h2>
+  {{ $uniqueYear := .}}
+  <ul>
+    {{ range $.Pages }}
+      {{ if eq (slicestr .Date 0 4) $uniqueYear }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  {{ end }}
+
+{{ end }}
+
+
