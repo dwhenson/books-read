@@ -1,5 +1,5 @@
 TODO
-
-- Split list by years on read page
-- Create list of totals on home page - total and by year? 
+-
+- Refactor home page loops
+- Add comments to home page, books read page
 - Add basic themes and styles

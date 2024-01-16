@@ -3,19 +3,12 @@
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
 
-
-
-{{ $file := print "images/" .File.BaseFileName ".jpg" }}
-{{ with resources.Get $file  }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-{{ end }}
-
-
 {{ $bookCover :=
     print "https://books.google.com/books/content?id="
     .Params.id
     "&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
 }}
+
 {{ with resources.GetRemote $bookCover }}
     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
 {{ end }}

@@ -7,7 +7,7 @@
 {{ end }}
 {{ $uniqueYears := $years | uniq }}
 
-<h1>Books Read</h1>
+<h1>Books Read by Year</h1>
   {{ range $uniqueYears }}
 <h2> {{ . }} </h2>
   {{ $uniqueYear := .}}
