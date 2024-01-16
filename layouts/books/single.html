@@ -3,18 +3,28 @@
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
 
-{{ $url := print "https://books.google.com/books/content?id=" .Params.id  "&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api" }}
 
-{{ $src := $url }}
-{{ with resources.GetRemote $src }}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else }}
+{{ $string := print "images/" .File.BaseFileName ".jpg" }}
+
+{{ $file := $string }}
+{{ $asset := resources.Get $file }}
+
+<img src="/{{ $asset }}/" />
+
+{{ $bookCover :=
+    print "https://books.google.com/books/content?id="
+    .Params.id
+    "&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
+}}
+
+{{ with resources.GetRemote $bookCover }}
     <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-  {{ end }}
-{{ else }}
-  {{ errorf "Unable to get remote resource %q" $src }}
 {{ end }}
 
  {{ .Content }}
 {{ end }}
+
+
+
+
+
