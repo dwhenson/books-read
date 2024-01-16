@@ -1,5 +1,5 @@
 {{ define "main" }}
-	{{ .Content }}
+    {{ .Content }}
 
 {{ $years := slice }}
 {{ range where $.Site.RegularPages "Section" "books" }}
@@ -12,33 +12,31 @@
   {{ range $uniqueYears }}
 <h2> {{ . }} </h2>
   {{ $uniqueYear := .}}
-    {{ $books := slice }}
+    {{ $total := slice }}
     {{ $bookPages := where $.Site.RegularPages "Section" "books"}}
     {{ range $bookPages }}
       {{ if eq (slicestr .Date 0 4) $uniqueYear }}
-          {{ $books = $books | append . }}
+          {{ $total = $total | append . }}
       {{ end }}
-   {{ end }}
+    {{ end }}
 
-    {{ $fiction := where $books "Params.fiction" "eq" true}}
-    {{ $nonFiction := where $books "Params.fiction" "ne" true}}
-
-    <p>Fiction: {{ len $fiction }} {{ cond (len $fiction | eq 1) "book" "books"}}</p>
-    <p>Non-fiction: {{ len $nonFiction }} {{ cond (len $nonFiction | eq 1) "book" "books"}} </p>
-    <p>Total: {{ len $books }} {{ cond (len $books | eq 1) "book" "books"}}</p>
+    {{ $fiction := where $total "Params.fiction" "eq" true}}
+    {{ $nonFiction := where $total "Params.fiction" "ne" true}}
 
     {{ $allCategories := dict
-        "Total" $books
+        "Total" $total
         "Fiction" $fiction
         "Non-fiction" $nonFiction
     }}
 
-    {{ range $key, $value := $allCategories}}
+    {{ range $key, $value := $allCategories }}
+        <h3>{{ $key }}</h3>
+            <p>{{ len $value }} {{ cond (len $value | eq 1) "book" "books"}}</p>
             {{ $total := 0}}
             {{ range $value }}
                 {{ $total = add $total .Params.Pages }}
             {{ end }}
-        <p>{{ $key }}: {{ $total }} pages </p>
+        <p>{{ $total }} pages </p>
     {{ end }}
 
     {{ end }}
