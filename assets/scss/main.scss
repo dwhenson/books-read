@@ -1,10 +1,7 @@
-:root {
+.stars {
   --star-size: 2rem;
   --star-color: transparent;
-  --stared-color: #fc0;
-}
-
-.stars {
+  --starred-color: #fc0;
   --percent: calc(var(--rating) / 5 * 100%);
 
   display: inline-block;
@@ -12,10 +9,14 @@
   line-height: 1;
 
   &::before {
-    content: '★★★★★';
     letter-spacing: 1px;
-    background: linear-gradient(90deg, var(--stared-color) var(--percent), var(--star-color) var(--percent));
-    -webkit-background-clip: text;
+    background: linear-gradient(
+      90deg,
+      var(--starred-color) var(--percent),
+      var(--star-color) var(--percent)
+    );
+    background-clip: text;
+    content: "★★★★★";
     -webkit-text-fill-color: transparent;
   }
 }
