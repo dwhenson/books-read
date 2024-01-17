@@ -3,9 +3,9 @@
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
 
+{{ partial "rating.html" . }}
 {{ partial "bookcover.html" . }}
 
 {{ .Content }}
 {{ end }}
 
-★

@@ -16,9 +16,10 @@
   <ul>
     {{ range $.Pages }}
       {{ if eq (slicestr .Date 0 4) $uniqueYear }}
-        <li>
+        <li style="--star-size: 1rem">
           {{ partial "bookcover.html" . }}
           <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+          {{ partial "rating.html" . }}
           {{- .Params.review -}}
         </li>
 
