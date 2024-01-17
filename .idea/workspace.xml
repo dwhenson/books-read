@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="Add star rating">
-      <change afterPath="$PROJECT_DIR$/layouts/partials/rating.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/blocks/_rating.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/books/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/books/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/books/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/books/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/books/20231220-age-of-vice.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/books/20231220-age-of-vice.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/books/20240106-the-road.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/books/20240106-the-road.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_170188855d14d903eca10cc8b6dffa74.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_170188855d14d903eca10cc8b6dffa74.content" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +24,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,24 +41,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/david.henson/Documents/Personal/book-review-site&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/david.henson",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/david.henson/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images" />
@@ -76,7 +82,14 @@
       <workItem from="1705308994539" duration="1101000" />
       <workItem from="1705319531117" duration="39209000" />
       <workItem from="1705489143914" duration="9000" />
-      <workItem from="1705493078155" duration="2984000" />
+      <workItem from="1705493078155" duration="6598000" />
+      <workItem from="1705501433135" duration="126000" />
+      <workItem from="1705501565147" duration="336000" />
+      <workItem from="1705501907204" duration="1736000" />
+      <workItem from="1705503655580" duration="616000" />
+      <workItem from="1705504281655" duration="56000" />
+      <workItem from="1705504348739" duration="1772000" />
+      <workItem from="1705508324879" duration="2372000" />
     </task>
     <task id="LOCAL-00001" summary="Update base url">
       <option name="closed" value="true" />
