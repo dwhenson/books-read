@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+<!-- Create an array item for each year -->
 {{ $years := slice }}
 {{ range .Pages }}
   {{ $year := slicestr .Date 0 4 }}
@@ -8,6 +9,7 @@
 {{ $uniqueYears := $years | uniq }}
 
 <h1>Books Read by Year</h1>
+<!-- Show the books read for each year -->
   {{ range $uniqueYears }}
 <h2> {{ . }} </h2>
   {{ $uniqueYear := .}}

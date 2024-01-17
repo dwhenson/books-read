@@ -1,6 +1,7 @@
 {{ define "main" }}
     {{ .Content }}
 
+<!-- Create an array item for each year -->
 {{ $years := slice }}
 {{ range where $.Site.RegularPages "Section" "books" }}
   {{ $year := slicestr .Date 0 4 }}
@@ -9,26 +10,31 @@
 {{ $uniqueYears := $years | uniq }}
 
 <h1>Reading Summary</h1>
+
+<!-- For each year, get the total number of books read -->
   {{ range $uniqueYears }}
 <h2> {{ . }} </h2>
   {{ $uniqueYear := .}}
     {{ $total := slice }}
     {{ $bookPages := where $.Site.RegularPages "Section" "books"}}
     {{ range $bookPages }}
-      {{ if eq (slicestr .Date 0 4) $uniqueYear }}
+         <script>console.log({{ . }})</script>
+      {{ if and (eq (slicestr .Date 0 4) $uniqueYear) (eq .Params.completed true) }}
           {{ $total = $total | append . }}
       {{ end }}
     {{ end }}
 
+<!-- Get the number of fiction and non-fiction books for each year -->
     {{ $fiction := where $total "Params.fiction" "eq" true}}
     {{ $nonFiction := where $total "Params.fiction" "ne" true}}
 
-    {{ $allCategories := dict
+     {{ $allCategories := dict
         "Total" $total
         "Fiction" $fiction
         "Non-fiction" $nonFiction
     }}
 
+<!-- Show the number of books and total pages read per category -->
     {{ range $key, $value := $allCategories }}
         <h3>{{ $key }}</h3>
             <p>{{ len $value }} {{ cond (len $value | eq 1) "book" "books"}}</p>
@@ -39,5 +45,7 @@
         <p>{{ $total }} pages </p>
     {{ end }}
 
+    <!-- End unique year loop -->
     {{ end }}
-{{ end }}
+<!-- End main -->
+{{ end }} 

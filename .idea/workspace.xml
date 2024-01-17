@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/20240106-the-road.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/20240118-a-hero-in-france.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/_gen/images/20240118-a-hero-in-france_hu247d21b81e808afb79f13cbfaf324ee0_23946_600x400_fit_q75_box.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/_gen/images/duck_hudb1e8379c65267297ed7076c9df30a56_9699_600x400_fit_box_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/books/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/books/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTES.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/david.henson/Documents/Personal/book-review-site",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/david.henson/Documents/Personal/book-review-site&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/images" />
@@ -74,7 +72,8 @@
       <workItem from="1705069348988" duration="11903000" />
       <workItem from="1705162895948" duration="5470000" />
       <workItem from="1705308994539" duration="1101000" />
-      <workItem from="1705319531117" duration="25218000" />
+      <workItem from="1705319531117" duration="39209000" />
+      <workItem from="1705489143914" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Update base url">
       <option name="closed" value="true" />
@@ -116,7 +115,39 @@
       <option name="project" value="LOCAL" />
       <updated>1705396350435</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add local file test">
+      <option name="closed" value="true" />
+      <created>1705401528899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705401528899</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update local file test">
+      <option name="closed" value="true" />
+      <created>1705402182079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705402182079</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add content to homepage">
+      <option name="closed" value="true" />
+      <created>1705417177071</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705417177071</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactor loops on homepage">
+      <option name="closed" value="true" />
+      <created>1705422131667</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705422131668</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +171,10 @@
     <MESSAGE value="Add book archetype" />
     <MESSAGE value="Add nested loop for book lists" />
     <MESSAGE value="Improve error checking for images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve error checking for images" />
+    <MESSAGE value="Add local file test" />
+    <MESSAGE value="Update local file test" />
+    <MESSAGE value="Add content to homepage" />
+    <MESSAGE value="Refactor loops on homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor loops on homepage" />
   </component>
 </project>

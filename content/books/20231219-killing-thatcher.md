@@ -2,6 +2,7 @@
 title: 'Killing Thatcher: The IRA, the Manhunt and the Long War on the Crown'
 author: 'Rory Carroll'
 date: '2023-12-19'
+completed: true
 fiction: false
 pages: 416
 id: fT-aEAAAQBAJ
