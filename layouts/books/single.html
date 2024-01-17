@@ -3,20 +3,9 @@
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
 
-{{ $bookCover :=
-    print "https://books.google.com/books/content?id="
-    .Params.id
-    "&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
-}}
+{{ partial "bookcover.html" . }}
 
-{{ with resources.GetRemote $bookCover }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ .Content }}
 {{ end }}
 
- {{ .Content }}
-{{ end }}
-
-
-
-
-
+★

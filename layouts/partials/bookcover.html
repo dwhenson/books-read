@@ -1,0 +1,11 @@
+{{ $bookCover :=
+    print "https://images-eu.bookshop.org/images/"
+    .Params.id
+    ".jpg"
+}}
+
+{{ $title := .Params.title }}
+
+{{ with resources.GetRemote $bookCover }}
+    <img src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640">
+{{ end }}

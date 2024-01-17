@@ -11,14 +11,17 @@
 <h1>Books Read by Year</h1>
 <!-- Show the books read for each year -->
   {{ range $uniqueYears }}
-<h2> {{ . }} </h2>
+<h2 id="{{ . }}"> {{- . -}} </h2>
   {{ $uniqueYear := .}}
   <ul>
     {{ range $.Pages }}
       {{ if eq (slicestr .Date 0 4) $uniqueYear }}
         <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ partial "bookcover.html" . }}
+          <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+          {{- .Params.review -}}
         </li>
+
       {{ end }}
     {{ end }}
   </ul>

@@ -13,12 +13,11 @@
 
 <!-- For each year, get the total number of books read -->
   {{ range $uniqueYears }}
-<h2> {{ . }} </h2>
+<h2><a href="/books/#{{- . -}}">{{- . -}} </a></h2>
   {{ $uniqueYear := .}}
     {{ $total := slice }}
     {{ $bookPages := where $.Site.RegularPages "Section" "books"}}
     {{ range $bookPages }}
-         <script>console.log({{ . }})</script>
       {{ if and (eq (slicestr .Date 0 4) $uniqueYear) (eq .Params.completed true) }}
           {{ $total = $total | append . }}
       {{ end }}
@@ -36,13 +35,13 @@
 
 <!-- Show the number of books and total pages read per category -->
     {{ range $key, $value := $allCategories }}
-        <h3>{{ $key }}</h3>
-            <p>{{ len $value }} {{ cond (len $value | eq 1) "book" "books"}}</p>
+        <h3>{{- $key -}}</h3>
+            <p>{{- len $value -}} {{ cond (len $value | eq 1) "book" "books"}}</p>
             {{ $total := 0}}
             {{ range $value }}
                 {{ $total = add $total .Params.Pages }}
             {{ end }}
-        <p>{{ $total }} pages </p>
+        <p>{{- $total -}} pages </p>
     {{ end }}
 
     <!-- End unique year loop -->

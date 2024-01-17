@@ -5,6 +5,7 @@ date: '2023-12-20'
 completed: false
 fiction: true
 pages: 548
-id: EijUDwAAQBAJ
+id: 9780708898888
 rating: 3
+review: "A fun, rollicking ride. I enjoyed the characters and plot. As I continue to indulge my soft spot for stories based in India."
 ---

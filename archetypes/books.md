@@ -8,4 +8,3 @@ pages:
 id:
 rating:
 ---
-ÍÍ
