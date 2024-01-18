@@ -1,3 +1,9 @@
+/* stylelint-disable order/properties-order */
+@charset "UTF-8";
+/* COLORS */
+/* TYPOGRAPHY */
+/* SIZING */
+/* BREAKPOINTS */
 /* Box sizing rules */
 *,
 *::before,
@@ -25,8 +31,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -67,7 +73,6 @@ picture {
   display: block;
   max-inline-size: 100%;
   block-size: auto;
-  vertical-align: middle;
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,3 +91,27 @@ select {
 :target {
   scroll-margin-block: 5ex;
 }
+
+body {
+  font-family: system-ui;
+  display: block;
+}
+
+.stars {
+  --star-size: 2rem;
+  --star-color: transparent;
+  --starred-color: ;
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  line-height: 1;
+}
+.stars::before {
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff5400 var(--percent), var(--star-color) var(--percent));
+  background-clip: text;
+  content: "★★★★★";
+  -webkit-text-fill-color: transparent;
+}
+
+/*# sourceMappingURL=main.css.map */

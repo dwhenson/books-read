@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="Add star rating">
-      <change afterPath="$PROJECT_DIR$/assets/scss/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/blocks/_rating.scss" afterDir="false" />
+    <list default="true" id="ca7a14b4-6eaf-4381-b839-7cfbc2ef2b02" name="Changes" comment="Add SCSS set up">
+      <change afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/abstracts/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/components/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/global/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/global/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_e4662de1a53858f70bce38ce429b67de.content" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_e4662de1a53858f70bce38ce429b67de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_f120a3f402b106f64b18d498afd3d82e.content" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_f120a3f402b106f64b18d498afd3d82e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/abstracts/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/global/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/blocks/_rating.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_rating.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/books/20231220-age-of-vice.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/books/20231220-age-of-vice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/books/20240106-the-road.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/books/20240106-the-road.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/books/20240118-a-hero-in-france.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/books/20240118-a-hero-in-france.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/meta.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/meta.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_170188855d14d903eca10cc8b6dffa74.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/main.scss_170188855d14d903eca10cc8b6dffa74.content" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +39,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -55,17 +69,17 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/usr/local/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "watcher.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/scss/global" />
+      <recent name="$PROJECT_DIR$/assets/scss/abstracts" />
+      <recent name="$PROJECT_DIR$/assets/scss" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/content/books" />
-      <recent name="$PROJECT_DIR$/archetypes" />
-      <recent name="$PROJECT_DIR$/archetypes/books" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +103,14 @@
       <workItem from="1705503655580" duration="616000" />
       <workItem from="1705504281655" duration="56000" />
       <workItem from="1705504348739" duration="1772000" />
-      <workItem from="1705508324879" duration="2372000" />
+      <workItem from="1705508324879" duration="2647000" />
+      <workItem from="1705570284129" duration="6065000" />
+      <workItem from="1705579228977" duration="64000" />
+      <workItem from="1705579300180" duration="3406000" />
+      <workItem from="1705584847485" duration="508000" />
+      <workItem from="1705585363543" duration="295000" />
+      <workItem from="1705585683425" duration="81000" />
+      <workItem from="1705585786453" duration="1455000" />
     </task>
     <task id="LOCAL-00001" summary="Update base url">
       <option name="closed" value="true" />
@@ -201,6 +222,7 @@
     <MESSAGE value="Refactor loops on homepage" />
     <MESSAGE value="Improve page structure" />
     <MESSAGE value="Add star rating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add star rating" />
+    <MESSAGE value="Add SCSS set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SCSS set up" />
   </component>
 </project>

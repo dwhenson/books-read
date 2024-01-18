@@ -29,9 +29,9 @@
     {{ $nonFiction := where $total "Params.fiction" "ne" true}}
 
      {{ $allCategories := dict
-        "Total" $total
         "Fiction" $fiction
         "Non-fiction" $nonFiction
+        "Total" $total
     }}
 
 <!-- Show the number of books and total pages read per category -->
