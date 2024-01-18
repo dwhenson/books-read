@@ -1,6 +1,7 @@
 @use "sass:map";
+@use "variables" as *;
 
-@function colorValue($color, $shade) {
+@function color-value($color, $shade) {
   @if map.has-key($colors, $color, $shade) {
     @return map.get($colors, $color, $shade);
   }
@@ -10,7 +11,7 @@
   }
 }
 
-@function fontSize($font-size) {
+@function font-value($font-size) {
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
   }
@@ -20,7 +21,7 @@
   }
 }
 
-@function spaceValue($size) {
+@function space-value($size) {
   @if map.has-key($sizes, $size) {
     @return map.get($sizes, $size);
   }

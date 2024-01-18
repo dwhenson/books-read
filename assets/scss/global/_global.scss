@@ -1,4 +1,47 @@
+@use "../abstracts" as *;
+
 body {
   font-family: system-ui;
-  display: block;
+  font-size: font-value(step-0);
+  line-height: 1.5;
+  color: #293136;
+}
+
+main {
+  grid-template-rows: 1fr;
+}
+
+:where(h1, h2, h3, h4) {
+  font-family: $ff-headings;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: font-value(step-4);
+}
+
+h2 {
+  font-size: font-value(step-3);
+}
+
+h3 {
+  font-size: font-value(step-2);
+}
+
+h4 {
+  font-size: font-value(step-1);
+}
+
+p {
+  max-inline-size: min(100%, 55ch);
+}
+
+:focus-visible {
+  opacity: 1 !important;
+  outline: 4px solid $color-accent;
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: transparent;
 }

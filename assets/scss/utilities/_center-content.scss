@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.center-content {
+  --min: #{space-value(space-m)};
+  --container-max: 1440px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--min, 1rem), 1fr)
+    minmax(320px, 1240px)
+    minmax(var(--min, 1rem), 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: space-value(space-2xl);
+
+  > * {
+    grid-column: 2;
+  }
+}
