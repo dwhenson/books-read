@@ -2,36 +2,36 @@
 
 /* COLORS */
 
-$color-general: #390099;
-$color-fiction: #9e0059;
+$color-general: #293136;
+$color-fiction: #47009e;
 $color-nonfiction: #ff0054;
-$color-accent: #ff5400;
+$color-accent: #ff7300;
 
 $colors: (
   general: (
     light:
       color.scale(
         $color: $color-general,
-        $lightness: 30%,
+        $lightness: 20%,
       ),
     normal: $color-general,
     dark:
       color.scale(
         $color: $color-general,
-        $lightness: -30%,
+        $lightness: -20%,
       ),
   ),
   fiction: (
     light:
       color.scale(
         $color: $color-fiction,
-        $lightness: 30%,
+        $lightness: 20%,
       ),
     normal: $color-fiction,
     dark:
       color.scale(
         $color: $color-fiction,
-        $lightness: -30%,
+        $lightness: -20%,
       ),
   ),
   nonfiction: (
@@ -44,7 +44,7 @@ $colors: (
     dark:
       color.scale(
         $color: $color-nonfiction,
-        $lightness: -30%,
+        $lightness: -20%,
       ),
   ),
 );

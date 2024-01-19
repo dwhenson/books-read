@@ -127,7 +127,7 @@ p {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid #ff5400;
+  outline: 4px solid #ff7300;
   outline-offset: 4px;
 }
 
@@ -146,22 +146,57 @@ p {
 }
 .rating::before {
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #ff5400 var(--percent), var(--star-color) var(--percent));
+  background: linear-gradient(90deg, #ff7300 var(--percent), var(--star-color) var(--percent));
   background-clip: text;
   content: "★★★★★";
   -webkit-text-fill-color: transparent;
 }
 
+.book-list-item {
+  display: flex;
+  gap: clamp(2rem, 1.86rem + 0.71vw, 2.5rem);
+}
+.book-list-item .cover-image {
+  max-inline-size: 150px;
+}
+
 .book-list {
   display: flex;
-  max-block-size: 200px;
-  gap: clamp(1.5rem, 1.39rem + 0.54vw, 1.88rem);
+  flex-flow: row-reverse;
 }
-.book-list .cover-image {
-  max-inline-size: 125px;
+.book-list .sticky-header {
+  position: sticky;
+  inset-block-start: 2em;
+  margin-block-end: 2em;
+  align-self: flex-start;
+  color: #4d5c65;
 }
-.book-list .book-content {
-  padding: 1em;
+
+.fiction h3 {
+  color: #47009e;
+}
+.nonfiction h3 {
+  color: #ff0054;
+}
+
+.cover-image {
+  box-shadow: 0 0.6px 0.5px rgba(57, 0, 126, 0.26), 0 0.9px 0.7px -1.2px rgba(57, 0, 126, 0.21), 0 2.5px 1.9px -2.5px rgba(57, 0, 126, 0.16), -0.1px 7px 5.3px -3.7px rgba(57, 0, 126, 0.11), -0.2px 15.8px 11.9px -5px rgba(57, 0, 126, 0.05);
+}
+.fiction .cover-image {
+  box-shadow: 0 0.6px 0.5px rgba(57, 0, 126, 0.26), 0 0.9px 0.7px -1.2px rgba(57, 0, 126, 0.21), 0 2.5px 1.9px -2.5px rgba(57, 0, 126, 0.16), -0.1px 7px 5.3px -3.7px rgba(57, 0, 126, 0.11), -0.2px 15.8px 11.9px -5px rgba(57, 0, 126, 0.05);
+}
+.nonfiction .cover-image {
+  box-shadow: 0 0.6px 0.5px rgba(204, 0, 67, 0.26), 0 0.9px 0.7px -1.2px rgba(204, 0, 67, 0.21), 0 2.5px 1.9px -2.5px rgba(204, 0, 67, 0.16), -0.1px 7px 5.3px -3.7px rgba(204, 0, 67, 0.11), -0.2px 15.8px 11.9px -5px rgba(204, 0, 67, 0.05);
+}
+
+.category {
+  font-weight: 700;
+}
+.fiction .category {
+  color: #6700e4;
+}
+.nonfiction .category {
+  color: #ff4d87;
 }
 
 .flow-content {
@@ -188,4 +223,10 @@ p {
 }
 .center-content > * {
   grid-column: 2;
+}
+
+.sticky-header {
+  position: sticky;
+  inset-block-start: 2em;
+  text-align: end;
 }

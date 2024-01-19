@@ -2,14 +2,47 @@
 
 .book-list {
   display: flex;
-  max-block-size: 200px;
-  gap: space-value(space-m);
+  flex-flow: row-reverse;
 
-  .cover-image {
-    max-inline-size: 125px;
+  .sticky-header {
+    position: sticky;
+    inset-block-start: 2em;
+    margin-block-end: 2em;
+    align-self: flex-start;
+    color: color-value(general, light);
+  }
+}
+
+h3 {
+  .fiction & {
+    color: color-value(fiction, normal);
   }
 
-  .book-content {
-    padding: 1em;
+  .nonfiction & {
+    color: color-value(nonfiction, normal);
+  }
+}
+
+.cover-image {
+  @include box-shadow(color-value(fiction, dark));
+
+  .fiction & {
+    @include box-shadow(color-value(fiction, dark));
+  }
+
+  .nonfiction & {
+    @include box-shadow(color-value(nonfiction, dark));
+  }
+}
+
+.category {
+  font-weight: $fw-700;
+
+  .fiction & {
+    color: color-value(fiction, light);
+  }
+
+  .nonfiction & {
+    color: color-value(nonfiction, light);
   }
 }

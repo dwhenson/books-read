@@ -27,3 +27,12 @@
     @error 'the keyword #{$size} is not in the $breakpoints map';
   }
 }
+
+@mixin box-shadow($color: $color-general) {
+  box-shadow:
+    0 0.6px 0.5px rgb($color, 26%),
+    0 0.9px 0.7px -1.2px rgb($color, 21%),
+    0 2.5px 1.9px -2.5px rgb($color, 16%),
+    -0.1px 7px 5.3px -3.7px rgb($color, 11%),
+    -0.2px 15.8px 11.9px -5px rgb($color, 5%);
+}

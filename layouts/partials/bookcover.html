@@ -7,7 +7,7 @@
 {{ $title := .Params.title }}
 
 {{ with resources.GetRemote $bookCover }}
-    <div class="cover-image">
-        <img src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640">
+    <div >
+        <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640">
     </div>
 {{ end }}

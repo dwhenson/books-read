@@ -8,28 +8,32 @@
 {{ end }}
 {{ $uniqueYears := $years | uniq }}
 
-<h1>Books Read by Year</h1>
+<h1>Books Read</h1>
 <!-- Show the books read for each year -->
   {{ range $uniqueYears }}
-<div class="flow-content">
-  <h2 id="{{ . }}"> {{- . -}} </h2>
+<section class="book-list" style="--flow-space: 4em;">
+  <h2 id="{{ . }}" class="sticky-header"> {{- . -}} </h2>
   {{ $uniqueYear := .}}
   <ul role="list" class="flow-content">
-    {{ range $.Pages }}
-    {{ if eq (slicestr .Date 0 4) $uniqueYear }}
-    <li class="book-list" style="--star-size: 1rem">
+      {{ range $.Pages }}
+      {{ if eq (slicestr .Date 0 4) $uniqueYear }}
+    <li class='book-list-item {{ cond (.Params.fiction) "fiction" "nonfiction" }}'>
       {{ partial "bookcover.html" . }}
-      <div class="book-content flow-content" style="">
+      <div class="book-content flow-content" style="--flow-space: 0.75em">
         <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+        <p>By <strong>{{ .Params.author}}</strong> |
+          <span class='category'>
+          {{ cond (.Params.fiction) "Fiction" "Non-fiction" }}
+          </span></p>
         <p>{{- .Params.review -}}</p>
         {{ partial "rating.html" . }}
       </div>
     </li>
 
-    {{ end }}
+      {{ end }}
     {{ end }}
   </ul>
-</div>
+</section>
   {{ end }}
 
 {{ end }}

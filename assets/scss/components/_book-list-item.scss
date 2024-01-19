@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.book-list-item {
+  display: flex;
+  gap: space-value(space-l);
+
+  .cover-image {
+    max-inline-size: 150px;
+  }
+}
