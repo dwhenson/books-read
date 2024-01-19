@@ -16,10 +16,18 @@
 h3 {
   .fiction & {
     color: color-value(fiction, normal);
+
+    &:hover {
+      color: color-value(fiction, light);
+    }
   }
 
   .nonfiction & {
     color: color-value(nonfiction, normal);
+
+    &:hover {
+      color: color-value(nonfiction, light);
+    }
   }
 }
 

@@ -175,8 +175,14 @@ p {
 .fiction h3 {
   color: #47009e;
 }
+.fiction h3:hover {
+  color: #6700e4;
+}
 .nonfiction h3 {
   color: #ff0054;
+}
+.nonfiction h3:hover {
+  color: #ff4d87;
 }
 
 .cover-image {
@@ -197,6 +203,23 @@ p {
 }
 .nonfiction .category {
   color: #ff4d87;
+}
+
+.book-detail {
+  display: flex;
+  gap: clamp(4rem, 3.71rem + 1.43vw, 5rem);
+}
+
+h1.fiction,
+span.fiction {
+  font-weight: 700;
+  color: #47009e;
+}
+
+h1.nonfiction,
+span.nonfiction {
+  font-weight: 700;
+  color: #ff0054;
 }
 
 .flow-content {

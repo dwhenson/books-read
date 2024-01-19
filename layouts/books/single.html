@@ -1,11 +1,13 @@
 {{ define "main" }}
- <h1>{{ .Params.Title }}</h1>
+ <h1 class='book-detail {{ cond (.Params.fiction) "fiction" "nonfiction" }}'>{{ .Params.Title }}</h1>
  <h2>By {{ .Params.Author }}</h2>
- <p>Finished on {{ .Date.Format "January 2, 2006" }}</p>
+ <p>Finished on {{ .Date.Format "January 2, 2006" }} | <span class="{{ cond (.Params.fiction) "fiction" "nonfiction" }}">{{ cond (.Params.fiction) "Fiction" "Non-fiction" }}</span></p>
+ {{ partial "rating.html" . }}
 
-{{ partial "rating.html" . }}
-{{ partial "bookcover.html" . }}
-
+<div class="book-detail">
+ {{ partial "bookcover.html" . }}
 {{ .Content }}
+</div>
+
 {{ end }}
 
