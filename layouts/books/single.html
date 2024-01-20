@@ -1,12 +1,18 @@
 {{ define "main" }}
- <h1 class='book-detail {{ cond (.Params.fiction) "fiction" "nonfiction" }}'>{{ .Params.Title }}</h1>
+ <h1 class='book-detail {{ .Params.category }}'>{{ .Params.Title }}</h1>
  <h2>By {{ .Params.Author }}</h2>
- <p>Finished on {{ .Date.Format "January 2, 2006" }} | <span class="{{ cond (.Params.fiction) "fiction" "nonfiction" }}">{{ cond (.Params.fiction) "Fiction" "Non-fiction" }}</span></p>
- {{ partial "rating.html" . }}
+ <p>Finished during <a href="/books/#{{ slicestr .Date 0 4 }}">{{ slicestr .Date 0 4 }}</a> |
+  <span class='{{ .Params.category }}'>
+   {{ .Params.category | humanize }}
+  </span>
+ </p>
 
 <div class="book-detail">
  {{ partial "bookcover.html" . }}
-{{ .Content }}
+ <div class="flow-content" style='--flow-space: 1em; --star-size: 2em;'>
+  {{ .Content }}
+  {{ partial "rating.html" . }}
+ </div>
 </div>
 
 {{ end }}

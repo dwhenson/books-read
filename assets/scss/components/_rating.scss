@@ -1,20 +1,19 @@
 @use "../abstracts" as *;
 
 .rating {
-  --star-size: 1.5rem;
   --star-color: transparent;
-  --starred-color: ;
   --percent: calc(var(--rating) / 5 * 100%);
 
   display: inline-block;
-  font-size: var(--star-size);
+  inline-size: min-content;
+  font-size: var(--star-size, 1.5em);
   line-height: 1;
 
   &::before {
     letter-spacing: 1px;
     background: linear-gradient(
       90deg,
-      $color-accent var(--percent),
+      var(--starred-color, currentcolor) var(--percent),
       var(--star-color) var(--percent)
     );
     background-clip: text;

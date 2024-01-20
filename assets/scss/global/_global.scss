@@ -2,6 +2,7 @@
 
 body {
   font-family: system-ui;
+  font-family: $ff-body;
   font-size: font-value(step-0);
   line-height: 1.5;
   color: color-value(general, normal);
@@ -17,7 +18,7 @@ main {
 }
 
 h1 {
-  font-size: font-value(step-4);
+  font-size: font-value(step-5);
 }
 
 h2 {
@@ -25,15 +26,28 @@ h2 {
 }
 
 h3 {
-  font-size: font-value(step-2);
+  font-size: font-value(step-3);
 }
 
 h4 {
-  font-size: font-value(step-1);
+  font-size: font-value(step-2);
 }
 
 p {
   max-inline-size: min(100%, 55ch);
+}
+
+small {
+  font-size: font-value(step--1);
+}
+
+a {
+  font-weight: $fw-700;
+  color: $color-accent;
+
+  nav & {
+    text-decoration: none;
+  }
 }
 
 :focus-visible {

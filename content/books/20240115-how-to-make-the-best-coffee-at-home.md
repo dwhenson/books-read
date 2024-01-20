@@ -1,9 +1,9 @@
 ---
-title: 'How to Make the Best Coffee at Home'
+title: "How to Make the Best Coffee at Home"
 author: "James Hoffmann"
-date: '2024-01-15'
+date: "2024-01-15"
 completed: true
-fiction: false
+category: "nonfiction"
 pages: 224
 id: 9781784727246
 rating: 3

@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.nonfiction-light {
+  color: color-value(nonfiction, light);
+}
+
+.nonfiction-normal {
+  color: color-value(nonfiction, normal);
+}
+
+.nonfiction-dark {
+  color: color-value(nonfiction, dark);
+}

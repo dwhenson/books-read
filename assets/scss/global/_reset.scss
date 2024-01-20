@@ -58,12 +58,6 @@ h4 {
   text-wrap: balance;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentcolor;
-}
-
 /* Make images easier to work with */
 img,
 picture {

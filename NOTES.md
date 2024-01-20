@@ -1,7 +1,6 @@
 # TODO
 
-- Book detail layout - more shadow, move stars
-- Homepage layout?
+- Homepage layout - grid of books
 - Nav
-- Footer
+- Javascript burger menu
 - Pagination?

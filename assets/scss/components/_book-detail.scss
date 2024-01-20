@@ -3,6 +3,10 @@
 .book-detail {
   display: flex;
   gap: space-value(space-2xl);
+
+  .cover-image {
+    max-inline-size: unset;
+  }
 }
 
 h1.fiction,

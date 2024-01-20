@@ -17,13 +17,13 @@
   <ul role="list" class="flow-content">
       {{ range $.Pages }}
       {{ if eq (slicestr .Date 0 4) $uniqueYear }}
-    <li class='book-list-item {{ cond (.Params.fiction) "fiction" "nonfiction" }}'>
+    <li class='book-list-item {{ .Params.category }}'>
       {{ partial "bookcover.html" . }}
       <div class="book-content flow-content" style="--flow-space: 0.75em">
-        <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+        <h3><a class="{{ .Params.category }}-normal" href="{{ .Permalink }}">{{- .Title -}}</a></h3>
         <p>By <strong>{{ .Params.author}}</strong> |
-          <span class='category'>
-          {{ cond (.Params.fiction) "Fiction" "Non-fiction" }}
+          <span class='{{ .Params.category }}-light bold'>
+          {{ .Params.category | humanize }}
           </span></p>
         <p>{{- .Params.review -}}</p>
         {{ partial "rating.html" . }}

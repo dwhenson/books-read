@@ -5,9 +5,10 @@
 }}
 
 {{ $title := .Params.title }}
+{{ $category := .Params.category }}
 
 {{ with resources.GetRemote $bookCover }}
-    <div >
+    <div class="{{ $category }}">
         <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640">
     </div>
 {{ end }}

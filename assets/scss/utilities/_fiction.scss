@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.fiction-light {
+  color: color-value(fiction, light);
+}
+
+.fiction-normal {
+  color: color-value(fiction, normal);
+}
+
+.fiction-dark {
+  color: color-value(fiction, dark);
+}

@@ -62,12 +62,6 @@ h4 {
   text-wrap: balance;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentcolor;
-}
-
 /* Make images easier to work with */
 img,
 picture {
@@ -91,6 +85,7 @@ select {
 
 body {
   font-family: system-ui;
+  font-family: system-ui, sans-serif;
   font-size: clamp(1rem, 0.93rem + 0.36vw, 1.25rem);
   line-height: 1.5;
   color: #293136;
@@ -106,7 +101,7 @@ main {
 }
 
 h1 {
-  font-size: clamp(2.07rem, 1.54rem + 2.68vw, 3.95rem);
+  font-size: clamp(2.49rem, 1.7rem + 3.96vw, 5.26rem);
 }
 
 h2 {
@@ -114,15 +109,27 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.44rem, 1.22rem + 1.12vw, 2.22rem);
+  font-size: clamp(1.73rem, 1.38rem + 1.76vw, 2.96rem);
 }
 
 h4 {
-  font-size: clamp(1.2rem, 1.07rem + 0.67vw, 1.67rem);
+  font-size: clamp(1.44rem, 1.22rem + 1.12vw, 2.22rem);
 }
 
 p {
   max-inline-size: min(100%, 55ch);
+}
+
+small {
+  font-size: clamp(0.83rem, 0.8rem + 0.15vw, 0.94rem);
+}
+
+a {
+  font-weight: 700;
+  color: #ff7300;
+}
+nav a {
+  text-decoration: none;
 }
 
 :focus-visible {
@@ -136,17 +143,16 @@ p {
 }
 
 .rating {
-  --star-size: 1.5rem;
   --star-color: transparent;
-  --starred-color: ;
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
-  font-size: var(--star-size);
+  inline-size: min-content;
+  font-size: var(--star-size, 1.5em);
   line-height: 1;
 }
 .rating::before {
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #ff7300 var(--percent), var(--star-color) var(--percent));
+  background: linear-gradient(90deg, var(--starred-color, currentcolor) var(--percent), var(--star-color) var(--percent));
   background-clip: text;
   content: "★★★★★";
   -webkit-text-fill-color: transparent;
@@ -167,47 +173,17 @@ p {
 .book-list .sticky-header {
   position: sticky;
   inset-block-start: 2em;
-  margin-block-end: 2em;
+  margin-block-end: 1em;
   align-self: flex-start;
-  color: #4d5c65;
-}
-
-.fiction h3 {
-  color: #47009e;
-}
-.fiction h3:hover {
-  color: #6700e4;
-}
-.nonfiction h3 {
-  color: #ff0054;
-}
-.nonfiction h3:hover {
-  color: #ff4d87;
-}
-
-.cover-image {
-  box-shadow: 0 0.6px 0.5px rgba(57, 0, 126, 0.26), 0 0.9px 0.7px -1.2px rgba(57, 0, 126, 0.21), 0 2.5px 1.9px -2.5px rgba(57, 0, 126, 0.16), -0.1px 7px 5.3px -3.7px rgba(57, 0, 126, 0.11), -0.2px 15.8px 11.9px -5px rgba(57, 0, 126, 0.05);
-}
-.fiction .cover-image {
-  box-shadow: 0 0.6px 0.5px rgba(57, 0, 126, 0.26), 0 0.9px 0.7px -1.2px rgba(57, 0, 126, 0.21), 0 2.5px 1.9px -2.5px rgba(57, 0, 126, 0.16), -0.1px 7px 5.3px -3.7px rgba(57, 0, 126, 0.11), -0.2px 15.8px 11.9px -5px rgba(57, 0, 126, 0.05);
-}
-.nonfiction .cover-image {
-  box-shadow: 0 0.6px 0.5px rgba(204, 0, 67, 0.26), 0 0.9px 0.7px -1.2px rgba(204, 0, 67, 0.21), 0 2.5px 1.9px -2.5px rgba(204, 0, 67, 0.16), -0.1px 7px 5.3px -3.7px rgba(204, 0, 67, 0.11), -0.2px 15.8px 11.9px -5px rgba(204, 0, 67, 0.05);
-}
-
-.category {
-  font-weight: 700;
-}
-.fiction .category {
-  color: #6700e4;
-}
-.nonfiction .category {
-  color: #ff4d87;
+  color: #293136;
 }
 
 .book-detail {
   display: flex;
   gap: clamp(4rem, 3.71rem + 1.43vw, 5rem);
+}
+.book-detail .cover-image {
+  max-inline-size: unset;
 }
 
 h1.fiction,
@@ -220,6 +196,22 @@ h1.nonfiction,
 span.nonfiction {
   font-weight: 700;
   color: #ff0054;
+}
+
+.fiction .cover-image {
+  box-shadow: 0 0.6px 0.5px rgba(57, 0, 126, 0.26), 0 0.9px 0.7px -1.2px rgba(57, 0, 126, 0.21), 0 2.5px 1.9px -2.5px rgba(57, 0, 126, 0.16), -0.1px 7px 5.3px -3.7px rgba(57, 0, 126, 0.11), -0.2px 15.8px 11.9px -5px rgba(57, 0, 126, 0.05);
+}
+.nonfiction .cover-image {
+  box-shadow: 0 0.6px 0.5px rgba(204, 0, 67, 0.26), 0 0.9px 0.7px -1.2px rgba(204, 0, 67, 0.21), 0 2.5px 1.9px -2.5px rgba(204, 0, 67, 0.16), -0.1px 7px 5.3px -3.7px rgba(204, 0, 67, 0.11), -0.2px 15.8px 11.9px -5px rgba(204, 0, 67, 0.05);
+}
+
+footer {
+  margin-block-end: clamp(2rem, 1.86rem + 0.71vw, 2.5rem);
+}
+footer ul {
+  display: flex;
+  gap: clamp(2rem, 1.86rem + 0.71vw, 2.5rem);
+  text-decoration: none;
 }
 
 .flow-content {
@@ -248,8 +240,30 @@ span.nonfiction {
   grid-column: 2;
 }
 
-.sticky-header {
-  position: sticky;
-  inset-block-start: 2em;
-  text-align: end;
+.fiction-light {
+  color: #6700e4;
+}
+
+.fiction-normal {
+  color: #47009e;
+}
+
+.fiction-dark {
+  color: #39007e;
+}
+
+.nonfiction-light {
+  color: #ff4d87;
+}
+
+.nonfiction-normal {
+  color: #ff0054;
+}
+
+.nonfiction-dark {
+  color: #cc0043;
+}
+
+.bold {
+  font-weight: 700;
 }
