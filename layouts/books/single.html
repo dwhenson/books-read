@@ -5,13 +5,13 @@
   <span class='{{ .Params.category }}'>
    {{ .Params.category | humanize }}
   </span>
+    {{ partial "rating.html" . }}
  </p>
 
 <div class="book-detail">
  {{ partial "bookcover.html" . }}
  <div class="flow-content" style='--flow-space: 1em; --star-size: 2em;'>
   {{ .Content }}
-  {{ partial "rating.html" . }}
  </div>
 </div>
 

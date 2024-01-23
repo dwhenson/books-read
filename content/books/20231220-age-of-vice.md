@@ -2,7 +2,7 @@
 title: "Age of Vice"
 author: "Deepti Kapoor"
 date: "2023-12-20"
-completed: false
+completed: true
 category: "fiction"
 pages: 548
 id: 9780708898888

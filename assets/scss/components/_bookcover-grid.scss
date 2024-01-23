@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.bookcover-grid {
+  display: grid;
+  border-radius: 0.25em;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .fiction {
+    border: 3px solid color-value(fiction, dark);
+    border-radius: 0.25em;
+  }
+
+  .nonfiction {
+    border: 3px solid color-value(nonfiction, dark);
+    border-radius: 0.25em;
+  }
+}

@@ -17,33 +17,24 @@
 <h2><a href="/books/#{{ . }}">{{- . -}} </a></h2>
   {{ $uniqueYear := .}}
     {{ $total := slice }}
-    {{ $bookPages := where $.Site.RegularPages "Section" "books"}}
+    {{ $bookPages := where $.Site.RegularPages "Section" "eq" "books"}}
     {{ range $bookPages }}
       {{ if and (eq (slicestr .Date 0 4) $uniqueYear) (eq .Params.completed true) }}
           {{ $total = $total | append . }}
       {{ end }}
     {{ end }}
 
-<!-- Get the number of fiction and non-fiction books for each year -->
-    {{ $fiction := where $total "Params.fiction" "eq" true}}
-    {{ $nonFiction := where $total "Params.fiction" "ne" true}}
-
-     {{ $allCategories := dict
-        "Fiction" $fiction
-        "Non-fiction" $nonFiction
-        "Total" $total
-    }}
+    {{ $fiction := where $total ".Params.category" "eq" "fiction" }}
+    {{ $nonFiction := where $total ".Params.category" "eq" "nonfiction" }}
 
 <!-- Show the number of books and total pages read per category -->
-    {{ range $key, $value := $allCategories }}
-        <h3>{{- $key -}}</h3>
-            <p>{{ len $value }} {{ cond (len $value | eq 1) "book" "books"}}</p>
-            {{ $total := 0}}
-            {{ range $value }}
-                {{ $total = add $total .Params.Pages }}
-            {{ end }}
-        <p>{{ $total }} pages </p>
-    {{ end }}
+    <h3>{{ len $total }} {{ cond (len $total | eq 1) "book" "books" }}</h3>
+    <h4 style="margin-block-start: 0.25em">({{ len $fiction }} fiction | {{ len $nonFiction }} nonfiction)</h4>
+    <div class="bookcover-grid">
+        {{ range $total }}
+            {{ partial "bookcover.html" . }}
+        {{ end }}
+    </div>
 
     <!-- End unique year loop -->
     {{ end }}
