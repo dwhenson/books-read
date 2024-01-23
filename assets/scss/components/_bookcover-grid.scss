@@ -5,6 +5,12 @@
   border-radius: 0.25em;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
 
+  div {
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
   img {
     inline-size: 100%;
     block-size: 100%;
@@ -12,12 +18,10 @@
   }
 
   .fiction {
-    border: 3px solid color-value(fiction, dark);
-    border-radius: 0.25em;
+    @include overlay(color-value(fiction, dark));
   }
 
   .nonfiction {
-    border: 3px solid color-value(nonfiction, dark);
-    border-radius: 0.25em;
+    @include overlay(color-value(nonfiction, dark));
   }
 }

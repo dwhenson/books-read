@@ -47,6 +47,19 @@ $colors: (
         $lightness: -20%,
       ),
   ),
+  accent: (
+    light:
+      color.scale(
+        $color: $color-accent,
+        $lightness: 30%,
+      ),
+    normal: $color-accent,
+    dark:
+      color.scale(
+        $color: $color-accent,
+        $lightness: -20%,
+      ),
+  ),
 );
 
 /* TYPOGRAPHY */

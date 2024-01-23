@@ -11,3 +11,15 @@
 .nonfiction-dark {
   color: color-value(nonfiction, dark);
 }
+
+a.nonfiction-light:hover {
+  color: color-value(nonfiction, dark);
+}
+
+a.nonfiction-normal:hover {
+  color: color-value(nonfiction, light);
+}
+
+a.nonfiction-dark:hover {
+  color: color-value(nonfiction, light);
+}

@@ -1,7 +1,5 @@
 # TODO
 
-- Homepage layout - fix then, grid of books
-- Nav
+- Nav top
 - Javascript burger menu
-- Refactor SCSS
 - Pagination?

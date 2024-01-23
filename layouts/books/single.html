@@ -1,8 +1,8 @@
 {{ define "main" }}
- <h1 class='book-detail {{ .Params.category }}'>{{ .Params.Title }}</h1>
+ <h1 class='book-detail {{ .Params.category }}-normal'>{{ .Params.Title }}</h1>
  <h2>By {{ .Params.Author }}</h2>
  <p>Finished during <a href="/books/#{{ slicestr .Date 0 4 }}">{{ slicestr .Date 0 4 }}</a> |
-  <span class='{{ .Params.category }}'>
+  <span class='{{ .Params.category }}-normal'>
    {{ .Params.category | humanize }}
   </span>
     {{ partial "rating.html" . }}

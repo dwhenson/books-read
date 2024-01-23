@@ -41,9 +41,14 @@ small {
   font-size: font-value(step--1);
 }
 
-a {
+a:not([class]) {
   font-weight: $fw-700;
-  color: $color-accent;
+  color: color-value(accent, normal);
+  transition: all 200ms ease;
+
+  &:hover {
+    color: color-value(accent, light);
+  }
 
   nav & {
     text-decoration: none;
@@ -52,7 +57,7 @@ a {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid $color-accent;
+  outline: 4px solid color-value(accent, normal);
   outline-offset: 4px;
 }
 

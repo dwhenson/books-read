@@ -8,15 +8,3 @@
     max-inline-size: unset;
   }
 }
-
-h1.fiction,
-span.fiction {
-  font-weight: $fw-700;
-  color: color-value(fiction, normal);
-}
-
-h1.nonfiction,
-span.nonfiction {
-  font-weight: $fw-700;
-  color: color-value(nonfiction, normal);
-}

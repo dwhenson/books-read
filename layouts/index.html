@@ -29,10 +29,12 @@
 
 <!-- Show the number of books and total pages read per category -->
     <h3>{{ len $total }} {{ cond (len $total | eq 1) "book" "books" }}</h3>
-    <h4 style="margin-block-start: 0.25em">({{ len $fiction }} fiction | {{ len $nonFiction }} nonfiction)</h4>
+    <h4 style="margin-block-start: 0.25em">{{ len $fiction }} fiction | {{ len $nonFiction }} nonfiction</h4>
     <div class="bookcover-grid">
         {{ range $total }}
+        <a href="{{ .RelPermalink }}">
             {{ partial "bookcover.html" . }}
+        </a>
         {{ end }}
     </div>
 

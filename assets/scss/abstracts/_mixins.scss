@@ -36,3 +36,25 @@
     -0.1px 7px 5.3px -3.7px rgb($color, 11%),
     -0.2px 15.8px 11.9px -5px rgb($color, 5%);
 }
+
+@mixin overlay($color) {
+  border: 3px solid $color;
+  border-radius: 0.25em;
+
+  &::after {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    opacity: 0;
+    background: $color;
+    transition: opacity 300ms ease;
+    content: "";
+  }
+
+  &:hover::after {
+    opacity: 0.2;
+  }
+}
