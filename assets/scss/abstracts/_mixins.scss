@@ -2,29 +2,17 @@
 @use "sass:math";
 @use "sass:meta";
 
-@mixin mq($size) {
-  @if map.has-key($breakpoints, $size) {
-    $breakpoint: map.get($breakpoints, $size);
-
-    @media screen and (min-width: $breakpoint) {
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "medium" {
+    @media (width >= 40em) {
       @content;
     }
   }
 
- @else if meta.type-of($size) == number {
-    @if math.is-unitless($size) {
-      @error 'when using a number with @mq() make sure to include a unit';
+ @else if $breakpoint == "large" {
+    @media (width >= 60em) {
+      @content;
     }
-
- @else {
-      @media screen and (min-width: $size) {
-        @content;
-      }
-    }
-  }
-
- @else {
-    @error 'the keyword #{$size} is not in the $breakpoints map';
   }
 }
 

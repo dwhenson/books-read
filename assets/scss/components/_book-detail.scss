@@ -2,9 +2,15 @@
 
 .book-detail {
   display: flex;
-  gap: space-value(space-2xl);
+  flex-direction: column;
+  gap: space-value(space-s);
 
-  .cover-image {
-    max-inline-size: unset;
+  > * {
+    flex-basis: fit-content;
+  }
+
+  @include respond-to("medium") {
+    flex-direction: row;
+    gap: space-value(space-2xl);
   }
 }

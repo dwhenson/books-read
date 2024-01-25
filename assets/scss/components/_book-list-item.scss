@@ -2,9 +2,15 @@
 
 .book-list-item {
   display: flex;
-  gap: space-value(space-l);
+  flex-direction: column;
+  gap: space-value(space-s);
 
   .cover-image {
     max-inline-size: 150px;
+  }
+
+  @include respond-to("medium") {
+    flex-direction: row;
+    gap: space-value(space-l);
   }
 }

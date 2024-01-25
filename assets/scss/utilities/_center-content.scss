@@ -7,10 +7,9 @@
   display: grid;
   grid-template-columns:
     minmax(var(--min, 1rem), 1fr)
-    minmax(320px, 1240px)
+    minmax(0, 1240px)
     minmax(var(--min, 1rem), 1fr);
   grid-template-rows: auto 1fr auto;
-  gap: space-value(space-2xl);
 
   > * {
     grid-column: 2;

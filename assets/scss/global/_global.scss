@@ -6,6 +6,11 @@ body {
   font-size: font-value(step-0);
   line-height: 1.5;
   color: color-value(general, normal);
+  text-wrap: pretty;
+
+  > * + * {
+    margin-block-start: max(8vh, 2rem);
+  }
 }
 
 main {
@@ -15,6 +20,7 @@ main {
 :where(h1, h2, h3, h4) {
   font-family: $ff-headings;
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 h1 {
@@ -22,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: font-value(step-3);
+  font-size: font-value(step-4);
 }
 
 h3 {
