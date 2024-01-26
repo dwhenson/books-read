@@ -2,25 +2,13 @@
 
 /* COLORS */
 
-$color-general: #293136;
+$color-dark: #293136;
+$color-light: #fefefe;
 $color-fiction: #47009e;
 $color-nonfiction: #ff0054;
 $color-accent: #ff7300;
 
 $colors: (
-  general: (
-    light:
-      color.scale(
-        $color: $color-general,
-        $lightness: 20%,
-      ),
-    normal: $color-general,
-    dark:
-      color.scale(
-        $color: $color-general,
-        $lightness: -20%,
-      ),
-  ),
   fiction: (
     light:
       color.scale(

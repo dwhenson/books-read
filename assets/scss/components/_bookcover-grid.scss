@@ -2,7 +2,7 @@
 
 .bookcover-grid {
   display: grid;
-  border-radius: 0.25em;
+  border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
 
   div {

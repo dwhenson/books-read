@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>{{ .Page.Title }}</title>
 {{ $opts := dict "transpiler" "dartsass" }}
-{{ $scss := resources.Get "scss/main.scss" }}
-{{ $styles := $scss | resources.ToCSS $opts }}
+{{ $styles := resources.Get "scss/main.scss" | resources.ToCSS $opts}}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+
+

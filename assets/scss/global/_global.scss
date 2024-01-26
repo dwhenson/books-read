@@ -5,7 +5,8 @@ body {
   font-family: $ff-body;
   font-size: font-value(step-0);
   line-height: 1.5;
-  color: color-value(general, normal);
+  color: $color-dark;
+  background-color: $color-light;
   text-wrap: pretty;
 
   > * + * {
@@ -63,7 +64,7 @@ a:not([class]) {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid color-value(accent, normal);
+  outline: 4px solid currentcolor;
   outline-offset: 4px;
 }
 
