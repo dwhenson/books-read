@@ -10,7 +10,7 @@ body {
   text-wrap: pretty;
 
   > * + * {
-    margin-block-start: max(8vh, 2rem);
+    margin-block-start: max(12vh, 3rem);
   }
 }
 

@@ -93,7 +93,7 @@ body {
   text-wrap: pretty;
 }
 body > * + * {
-  margin-block-start: max(8vh, 2rem);
+  margin-block-start: max(12vh, 3rem);
 }
 
 main {
@@ -225,13 +225,16 @@ nav a:not([class]) {
 }
 
 .header {
+  display: flex;
   margin-block-start: max(4vh, 2rem);
+  align-items: center;
+  justify-content: space-between;
 }
 .header .navigation > ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: clamp(1.5rem, 1.39rem + 0.54vw, 1.88rem);
+  gap: clamp(3rem, 2.79rem + 1.07vw, 3.75rem);
 }
 
 /* Hamburger button creation */
@@ -284,7 +287,7 @@ nav a:not([class]) {
   position: absolute;
   z-index: 10;
   inset-inline-end: clamp(1.5rem, 1.39rem + 0.54vw, 1.88rem);
-  inset-block-start: calc(max(4vh, 2rem) - 8px);
+  inset-block-start: calc(max(4vh, 2rem) + 16px);
   display: block;
   inline-size: 2rem;
   block-size: 2rem;
@@ -306,8 +309,8 @@ nav a:not([class]) {
   inset: 0;
   inline-size: 100dvw;
   block-size: 100dvh;
-  padding-inline: clamp(1.5rem, 1.39rem + 0.54vw, 1.88rem);
-  padding-block-start: clamp(1.5rem, 1.39rem + 0.54vw, 1.88rem);
+  padding-inline: clamp(3rem, 2.79rem + 1.07vw, 3.75rem);
+  padding-block-start: clamp(3rem, 2.79rem + 1.07vw, 3.75rem);
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
@@ -366,7 +369,7 @@ footer {
 }
 footer ul {
   display: flex;
-  gap: clamp(2rem, 1.86rem + 0.71vw, 2.5rem);
+  gap: clamp(3rem, 2.79rem + 1.07vw, 3.75rem);
   text-decoration: none;
 }
 
@@ -374,6 +377,7 @@ footer ul {
   display: grid;
   border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+  gap: clamp(0.25rem, 0.23rem + 0.09vw, 0.31rem);
 }
 .bookcover-grid div {
   position: relative;

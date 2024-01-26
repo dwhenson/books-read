@@ -1,13 +1,16 @@
 @use "../abstracts" as *;
 
 .header {
+  display: flex;
   margin-block-start: max(4vh, 2rem);
+  align-items: center;
+  justify-content: space-between;
 
   .navigation > ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: space-value(space-m);
+    gap: space-value(space-xl);
   }
 }
 
@@ -62,7 +65,7 @@
   position: absolute;
   z-index: 10;
   inset-inline-end: space-value(space-m);
-  inset-block-start: calc(max(4vh, 2rem) - 8px);
+  inset-block-start: calc(max(4vh, 2rem) + 16px);
   display: block;
   inline-size: 2rem;
   block-size: 2rem;
@@ -85,8 +88,8 @@
   inset: 0;
   inline-size: 100dvw;
   block-size: 100dvh;
-  padding-inline: space-value(space-m);
-  padding-block-start: space-value(space-m);
+  padding-inline: space-value(space-xl);
+  padding-block-start: space-value(space-xl);
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;

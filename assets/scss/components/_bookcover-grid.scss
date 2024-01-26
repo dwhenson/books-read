@@ -4,6 +4,7 @@
   display: grid;
   border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+  gap: space-value(space-3xs);
 
   div {
     position: relative;
