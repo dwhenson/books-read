@@ -139,12 +139,12 @@ small {
 
 a:not([class]) {
   font-weight: 700;
-  color: #cc5c00;
+  color: #c0580e;
   transition: all 200ms ease;
 }
 
 a:not([class]):hover {
-  color: #ff9d4d;
+  color: #f39a5b;
 }
 
 nav a:not([class]) {
@@ -272,9 +272,9 @@ nav a:not([class]) {
   inline-size: 24px;
   block-size: 3px;
   margin-inline-start: -12px;
-  border: 1px solid #ff7300;
+  border: 1px solid #ee6f14;
   border-radius: 3px;
-  background: #ff7300;
+  background: #ee6f14;
   transition: transform 500ms cubic-bezier(0, 0.26, 0.13, 1.25);
 }
 
@@ -334,7 +334,7 @@ nav a:not([class]) {
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
-  background-color: #ff7300;
+  background-color: #ee6f14;
   transition: opacity 300ms;
   -webkit-overflow-scrolling: touch;
 }
@@ -557,13 +557,13 @@ a.nonfiction-dark:hover {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #cc5c00;
+  color: #c0580e;
   background-color: #293136;
 }
 
 .skip-link:hover {
   color: #293136;
-  background: #cc5c00;
+  background: #c0580e;
 }
 
 .skip-link:not(:focus) {
