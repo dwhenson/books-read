@@ -50,7 +50,7 @@ small {
 
 a:not([class]) {
   font-weight: $fw-700;
-  color: color-value(accent, normal);
+  color: color-value(accent, dark);
   transition: all 200ms ease;
 
   &:hover {

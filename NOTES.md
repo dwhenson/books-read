@@ -1,6 +1,5 @@
 # TODO
 
-- Nav top - aria-current page - top level loop
-- Javascript burger menu
+- Nav top - aria-current page - top level loop (.RelPermalink === Title?)
 - Pagination?
 - Update content to final - remove 2023?

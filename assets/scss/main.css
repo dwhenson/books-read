@@ -139,7 +139,7 @@ small {
 
 a:not([class]) {
   font-weight: 700;
-  color: #ff7300;
+  color: #cc5c00;
   transition: all 200ms ease;
 }
 
