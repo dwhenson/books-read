@@ -1,5 +1,5 @@
 ---
-title: "Politics on the Edge”
+title: "Politics on the Edge"
 author: "Rory Stewart"
 date: 2024-01-27
 completed: true
