@@ -22,7 +22,7 @@
       <div class="book-content flow-content" style="--flow-space: 0.75rem">
         <h3><a class="{{ .Params.category }}-normal" href="{{ .Permalink }}">{{- .Title -}}</a></h3>
         <p>By <strong>{{ .Params.author}}</strong> |
-          <span class='{{ .Params.category }}-light bold'>
+          <span class='{{ .Params.category }}-dark bold'>
           {{ .Params.category | humanize }}
           </span></p>
         {{ partial "rating.html" . }}
