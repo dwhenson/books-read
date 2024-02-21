@@ -7,6 +7,7 @@
 
 /* Prevent font size inflation */
 html {
+  scroll-behavior: smooth;
   text-size-adjust: none;
 }
 
