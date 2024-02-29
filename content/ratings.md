@@ -1,10 +1,6 @@
 ---
-title: About
+title: Ratings
 ---
-
-This site is a record of the books I've read. I've long thought of myself as a reader, but, before this site, I never recorded how many books I read, if I enjoyed them, or how much fiction or non-fiction I've been reading.
-<br>
-<br>
 My ratings are tough by design. Here's a guide:
 
 <div style="display: flex;flex-direction: column-reverse;--starred-color:#ff7300"><p><strong>One star</strong> means a book is rubbish. Not worth the time. If I don't finish it I will include it on the home page, but not on my record of books read.</p>{{< rating "1" >}}</div>

@@ -3,7 +3,7 @@ title: "Killing Thatcher: The IRA, the Manhunt and the Long War on the Crown"
 author: "Rory Carroll"
 date: "2023-12-19"
 completed: true
-category: "fiction"
+category: "nonfiction"
 pages: 416
 id: 9780008476656
 rating: 3
