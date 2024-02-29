@@ -1,0 +1,9 @@
+.pagination {
+  --flow-space: 3em;
+
+  display: flex;
+
+  :last-child {
+    margin-inline-start: auto;
+  }
+}

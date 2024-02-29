@@ -1,7 +1,6 @@
-# TODO
+Array of pages
 
-- Nav top - aria-current page - top level loop (.RelPermalink === Title?)
-
-
-FIXME
-Aligment on book list page
+If 1 or less bail
+If no previous page don't show
+If no next page don't show
+Otherwise show 'next/previous, book and link
