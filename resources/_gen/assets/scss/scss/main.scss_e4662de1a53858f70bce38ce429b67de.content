@@ -136,11 +136,11 @@ a:not([class]) {
   color: #ff7300;
   transition: all 200ms ease;
 }
-a:not([class]):hover {
-  color: #ff9d4d;
-}
 nav a:not([class]) {
   text-decoration: none;
+}
+a:not([class]):hover {
+  color: #ff9d4d;
 }
 
 :focus-visible {
@@ -151,6 +151,12 @@ nav a:not([class]) {
 
 :focus:not(:focus-visible) {
   outline: transparent;
+}
+
+a[aria-current=true] {
+  font-weight: bold;
+  text-decoration: solid 3px underline !important;
+  text-underline-offset: 0.25em;
 }
 
 .rating {

@@ -53,12 +53,12 @@ a:not([class]) {
   color: color-value(accent, normal);
   transition: all 200ms ease;
 
-  &:hover {
-    color: color-value(accent, light);
+ nav & {
+    text-decoration: none;
   }
 
-  nav & {
-    text-decoration: none;
+  &:hover {
+    color: color-value(accent, light);
   }
 }
 
@@ -71,3 +71,9 @@ a:not([class]) {
 :focus:not(:focus-visible) {
   outline: transparent;
 }
+
+  a[aria-current="true"] {
+    font-weight: bold;
+    text-decoration:  solid 3px underline !important;
+    text-underline-offset: 0.25em;
+  }
