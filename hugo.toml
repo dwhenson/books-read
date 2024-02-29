@@ -5,3 +5,4 @@ name = 'Dave Henson'
 disableKinds = ['taxonomy', 'term']
 [markup.goldmark.renderer]
 unsafe = true
+paginate = 1
