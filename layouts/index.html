@@ -1,45 +1,49 @@
-
 {{ define "main" }}
-    {{ .Content }}
+  {{ .Content }}
 
-<!-- Create an array item for each year -->
-{{ $years := slice }}
-{{ range where $.Site.RegularPages "Section" "books" }}
-  {{ $year := slicestr .Date 0 4 }}
-  {{ $years = $years | append $year }}
-{{ end }}
-{{ $uniqueYears := $years | uniq }}
 
-<h1>Bookshelf</h1>
+  <!-- Create an array item for each year -->
+  {{ $years := slice }}
+  {{ range where $.Site.RegularPages "Section" "books" }}
+    {{ $year := slicestr .Date 0 4 }}
+    {{ $years = $years | append $year }}
+  {{ end }}
+  {{ $uniqueYears := $years | uniq }}
 
-<!-- For each year, get the total number of books read -->
+
+  <h1>Bookshelf</h1>
+
+  <!-- For each year, get the total number of books read -->
   {{ range $uniqueYears }}
-<h2><a href="/books/#{{ . }}">{{- . -}} </a></h2>
-  {{ $uniqueYear := .}}
+    <h2><a href="/books/#{{ . }}">{{- . -}} </a></h2>
+    {{ $uniqueYear := . }}
     {{ $total := slice }}
-    {{ $bookPages := where $.Site.RegularPages "Section" "eq" "books"}}
+    {{ $bookPages := where $.Site.RegularPages "Section" "eq" "books" }}
     {{ range $bookPages }}
-      {{ if and (eq (slicestr .Date 0 4) $uniqueYear) (eq .Params.completed true) }}
-          {{ $total = $total | append . }}
+      {{ if and (eq (slicestr .Date 0 4) $uniqueYear) }}
+        {{ $total = $total | append . }}
       {{ end }}
     {{ end }}
 
     {{ $fiction := where $total ".Params.category" "eq" "fiction" }}
     {{ $nonFiction := where $total ".Params.category" "eq" "nonfiction" }}
 
-<!-- Show the number of books and total pages read per category -->
+
+    <!-- Show the number of books and total pages read per category -->
     <h3>{{ len $total }} {{ cond (len $total | eq 1) "book" "books" }}</h3>
-    <h4 style="margin-block-start: 0.25em"><span class="fiction-normal">{{ len $fiction }} fiction</span> &
-        <span class="nonfiction-normal">{{ len $nonFiction }} nonfiction</span></h4>
+    <h4 style="margin-block-start: 0.25em">
+      <span class="fiction-normal">{{ len $fiction }} fiction</span> &
+      <span class="nonfiction-normal">{{ len $nonFiction }} nonfiction</span>
+    </h4>
     <div class="bookcover-grid">
-        {{ range $total }}
+      {{ range $total }}
         <a href="{{ .RelPermalink }}">
-            {{ partial "bookcover.html" . }}
+          {{ partial "bookcover.html" . }}
         </a>
-        {{ end }}
+      {{ end }}
     </div>
 
     <!-- End unique year loop -->
-    {{ end }}
-<!-- End main -->
+  {{ end }}
+  <!-- End main -->
 {{ end }}
