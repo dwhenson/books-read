@@ -1,5 +1,5 @@
 ---
-title: ' the Escape Artist'
+title: 'The Escape Artist'
 author: "Jonathan Freedland"
 date: '2024-04-12'
 completed: true
