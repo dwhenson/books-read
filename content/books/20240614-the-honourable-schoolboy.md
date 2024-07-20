@@ -5,7 +5,7 @@ date: '2024-06-14'
 completed: true
 category: "fiction"
 pages: 686
-id: 9780241330906
+id: 9780241322352
 rating: 3.5
 review:  "A complex, show don't tell thriller, that's not quite the author at his best."
 ---
