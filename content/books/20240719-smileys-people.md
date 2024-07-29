@@ -6,7 +6,7 @@ completed: true
 category: "fiction"
 pages: 335
 id: 9780241322529
-rating: 3.75
+rating: 4
 review:  "A fitting, understated, masterful conclusion to the Smiley Triology."
 ---
 
