@@ -3,7 +3,7 @@ title: 'The Sisters Brothers'
 author: "Patrick deWitt"
 date: '2024-04-06'
 completed: true
-category: "fiction nonfiction"
+category: "fiction"
 pages: 210
 id: 9781847083197
 rating: 3
