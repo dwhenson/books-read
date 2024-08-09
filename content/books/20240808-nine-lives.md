@@ -1,5 +1,5 @@
 ---
-title: 'Nine Lives: My Time As MI6's Top Spy Inside al-Qaeda'
+title: "Nine Lives: My Time As MI6's Top Spy Inside al-Qaeda"
 author: "Aimen Dean"
 date: '2024-08-09'
 completed: true
