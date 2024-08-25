@@ -6,7 +6,7 @@ completed: true
 category: "fiction"
 pages: 403
 id: 9780241330890
-rating: 4.25
+rating: 4.5
 review: "A masterfully understated, slow-burn thrilling read."
 ---
 

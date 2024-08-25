@@ -143,6 +143,17 @@ a:not([class]):hover {
   color: #ff9d4d;
 }
 
+blockquote {
+  max-inline-size: 60ch;
+  margin-inline-start: 2px solid #ff7300;
+}
+blockquote > cite {
+  display: block;
+  inline-size: fit-content;
+  margin-block-start: 0.25rem;
+  font-weight: 700;
+}
+
 :focus-visible {
   opacity: 1 !important;
   outline: 4px solid currentcolor;
