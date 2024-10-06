@@ -10,6 +10,6 @@
 
 {{ with resources.GetRemote $bookCover }}
     <div class="{{ $category }}"  >
-        <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640" style="view-transition-name: {{ $id }}">
+        <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640" style="view-transition-name: image-{{ $id }}">
     </div>
 {{ end }}
