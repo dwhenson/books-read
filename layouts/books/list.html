@@ -20,7 +20,7 @@
     <li class='book-list-item {{ .Params.category }}'>
       {{ partial "bookcover.html" . }}
       <div class="book-content flow-content" style="--flow-space: 0.75rem">
-        <h3><a class="{{ .Params.category }}-normal" href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+        <h3 style="view-transition-name: header-{{ .Params.id  }}"><a class="{{ .Params.category }}-normal" href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>By <strong>{{ .Params.author}}</strong> |
           <span class='{{ .Params.category }}-dark bold'>
           {{ .Params.category | humanize }}

@@ -84,6 +84,9 @@ select {
   scroll-margin-block: 5ex;
 }
 
+@view-transition {
+  navigation: auto;
+}
 body {
   font-family: system-ui;
   font-family: system-ui, sans-serif;

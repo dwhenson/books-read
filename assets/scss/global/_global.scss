@@ -1,5 +1,9 @@
 @use "../abstracts" as *;
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
   font-family: system-ui;
   font-family: $ff-body;

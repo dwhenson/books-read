@@ -6,9 +6,10 @@
 
 {{ $title := .Params.title }}
 {{ $category := .Params.category }}
+{{ $id := .Params.id }}
 
 {{ with resources.GetRemote $bookCover }}
-    <div class="{{ $category }}">
-        <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640">
+    <div class="{{ $category }}"  >
+        <img class="cover-image" src="{{ $bookCover }}" alt="{{ $title }}" width="420" height="640" style="view-transition-name: {{ $id }}">
     </div>
 {{ end }}
