@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/books/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/books/20250106-pachinko/</loc>
+    <lastmod>2025-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/books/20241128-red-notice/</loc>
+    <lastmod>2024-11-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/books/20241109-american-dirt/</loc>
+    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/books/20241021-girl-dragon-tattoo/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/books/20240823-the-year-of-the-locust/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
