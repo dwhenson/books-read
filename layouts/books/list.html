@@ -12,7 +12,7 @@
 <!-- Show the books read for each year -->
   {{ range $uniqueYears }}
 <section class="book-list" style="--flow-space: 4em;">
-  <h2 id="{{ . }}" class="sticky-header" style="view-transition-name: {{ . }}"> {{- . -}} </h2>
+  <h2 id="{{ . }}" class="sticky-header" style="view-transition-name: year-{{ . }}"> {{- . -}} </h2>
   {{ $uniqueYear := .}}
   <ul role="list" class="flow-content">
       {{ range $.Pages }}

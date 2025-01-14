@@ -19,7 +19,7 @@
   </blockquote>
   <!-- For each year, get the total number of books read -->
   {{ range $uniqueYears }}
-    <h2 style="view-transition-name: {{ . }}"><a href="/books/#{{ . }}">{{- . -}} </a></h2>
+    <h2 style="view-transition-name: year-{{ . }}"><a href="/books/#{{ . }}">{{- . -}} </a></h2>
     {{ $uniqueYear := . }}
     {{ $total := slice }}
     {{ $books := where $.Site.RegularPages "Section" "eq" "books" }}

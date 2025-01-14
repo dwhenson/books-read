@@ -2,75 +2,75 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/books/</loc>
+    <loc>//localhost:54970/books/</loc>
     <lastmod>2025-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>//localhost:54970/</loc>
     <lastmod>2025-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20250106-pachinko/</loc>
+    <loc>//localhost:54970/books/20250106-pachinko/</loc>
     <lastmod>2025-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20241128-red-notice/</loc>
+    <loc>//localhost:54970/books/20241128-red-notice/</loc>
     <lastmod>2024-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20241109-american-dirt/</loc>
+    <loc>//localhost:54970/books/20241109-american-dirt/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20241021-girl-dragon-tattoo/</loc>
+    <loc>//localhost:54970/books/20241021-girl-dragon-tattoo/</loc>
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240823-the-year-of-the-locust/</loc>
+    <loc>//localhost:54970/books/20240823-the-year-of-the-locust/</loc>
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240818-damascus-station/</loc>
+    <loc>//localhost:54970/books/20240818-damascus-station/</loc>
     <lastmod>2024-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240808-nine-lives/</loc>
+    <loc>//localhost:54970/books/20240808-nine-lives/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240729-the-wager/</loc>
+    <loc>//localhost:54970/books/20240729-the-wager/</loc>
     <lastmod>2024-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240719-smileys-people/</loc>
+    <loc>//localhost:54970/books/20240719-smileys-people/</loc>
     <lastmod>2024-07-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240614-the-honourable-schoolboy/</loc>
+    <loc>//localhost:54970/books/20240614-the-honourable-schoolboy/</loc>
     <lastmod>2024-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240412-the-escape-artist/</loc>
+    <loc>//localhost:54970/books/20240412-the-escape-artist/</loc>
     <lastmod>2024-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240330-the-sisters-brothers/</loc>
+    <loc>//localhost:54970/books/20240330-the-sisters-brothers/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240316-victory-city/</loc>
+    <loc>//localhost:54970/books/20240316-victory-city/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240218-but-what-can-i-do/</loc>
+    <loc>//localhost:54970/books/20240218-but-what-can-i-do/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240221-tinker-tailor-soldier-spy/</loc>
+    <loc>//localhost:54970/books/20240221-tinker-tailor-soldier-spy/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240129-politics-on-the-edge/</loc>
+    <loc>//localhost:54970/books/20240129-politics-on-the-edge/</loc>
     <lastmod>2024-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240115-how-to-make-the-best-coffee-at-home/</loc>
+    <loc>//localhost:54970/books/20240115-how-to-make-the-best-coffee-at-home/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240118-a-hero-in-france/</loc>
+    <loc>//localhost:54970/books/20240118-a-hero-in-france/</loc>
     <lastmod>2024-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20240106-the-road/</loc>
+    <loc>//localhost:54970/books/20240106-the-road/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20231220-age-of-vice/</loc>
+    <loc>//localhost:54970/books/20231220-age-of-vice/</loc>
     <lastmod>2023-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/books/20231219-killing-thatcher/</loc>
+    <loc>//localhost:54970/books/20231219-killing-thatcher/</loc>
     <lastmod>2023-12-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/ratings/</loc>
+    <loc>//localhost:54970/ratings/</loc>
   </url>
 </urlset>

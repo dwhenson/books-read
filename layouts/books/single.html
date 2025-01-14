@@ -9,7 +9,7 @@
 <p>
   Finished during
   {{ $year := slicestr .Date 0 4 }}
-  <a href="/books/#{{ $year }}" style="view-transition-name: {{ . }}">{{ $year }}</a>
+  <a href="/books/#{{ $year }}" style="view-transition-name: year-{{ . }}">{{ $year }}</a>
   |
   <span class="{{ .Params.category }}-normal">{{ .Params.category | humanize }}</span>
   {{ partial "rating.html" . }}
