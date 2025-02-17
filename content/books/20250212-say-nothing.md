@@ -3,7 +3,7 @@ title: 'Say Nothing'
 author: "Patrick Radden Keefe"
 date: '2025-02-17'
 completed: true
-category: "fiction"
+category: "non-fiction"
 pages: 560
 id: 9780307279286
 rating: 4
