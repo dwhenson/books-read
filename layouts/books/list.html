@@ -1,8 +1,10 @@
 {{ define "main" }}
 
 <!-- Create an array item for each year -->
-{{ $years := slice }} {{ range .Pages }} {{ $year := slicestr .Date 0 4 }} {{
-$years = $years | append $year }} {{ end }} {{ $uniqueYears := $years | uniq }}
+{{ $years := slice }}
+  {{ range .Pages }}
+    {{ $year := slicestr .Date 0 4 }}
+    {{ $years = $years | append $year }} {{ end }} {{ $uniqueYears := $years | uniq }}
 
 <h1>{{ .Params.Title }}</h1>
 <!-- Show the books read for each year -->
@@ -35,7 +37,9 @@ $years = $years | append $year }} {{ end }} {{ $uniqueYears := $years | uniq }}
       </div>
     </li>
 
-    {{ end }} {{ end }}
+    {{ end }}
+  {{ end }}
   </ul>
 </section>
-{{ end }} {{ end }}
+{{ end }}
+{{ end }}
