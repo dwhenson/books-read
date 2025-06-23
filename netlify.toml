@@ -1,0 +1,7 @@
+[build]
+  command = "hugo"
+  publish = "public"
+  functions = "functions"
+  node_version = "22"
+  [build.environment]
+    HUGO_VERSION = "0.138.0"
