@@ -1,94 +1,99 @@
 @use "../abstracts" as *;
 
 @view-transition {
-  navigation: auto;
+	navigation: auto;
 }
 
 body {
-  font-family: system-ui;
-  font-family: $ff-body;
-  font-size: font-value(step-0);
-  line-height: 1.5;
-  color: $color-dark;
-  background-color: $color-light;
-  text-wrap: pretty;
+	font-family: system-ui;
+	font-family: $ff-body;
+	font-size: font-value(step-0);
+	line-height: 1.5;
+	color: $color-dark;
+	text-wrap: pretty;
+	background-color: $color-light;
 
-  > * + * {
-    margin-block-start: max(12vh, 3rem);
-  }
+	> * + * {
+		margin-block-start: max(12vh, 3rem);
+	}
 }
 
 main {
-  grid-template-rows: 1fr;
+	grid-template-rows: 1fr;
 }
 
 :where(h1, h2, h3, h4) {
-  font-family: $ff-headings;
-  line-height: 1.1;
-  text-wrap: balance;
+	font-family: $ff-headings;
+	line-height: 1.1;
+	text-wrap: balance;
 }
 
 h1 {
-  font-size: font-value(step-5);
+	font-size: font-value(step-5);
 }
 
 h2 {
-  font-size: font-value(step-4);
+	font-size: font-value(step-4);
 }
 
 h3 {
-  font-size: font-value(step-3);
+	font-size: font-value(step-3);
 }
 
 h4 {
-  font-size: font-value(step-2);
+	font-size: font-value(step-2);
 }
 
 p {
-  max-inline-size: min(100%, 55ch);
+	max-inline-size: min(100%, 55ch);
 }
 
 small {
-  font-size: font-value(step--1);
+	font-size: font-value(step--1);
+}
+
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
 }
 
 a:not([class]) {
-  font-weight: $fw-700;
-  color: color-value(accent, normal);
-  transition: all 200ms ease;
+	font-weight: $fw-700;
+	color: color-value(accent, normal);
+	transition: all 200ms ease;
 
- nav & {
-    text-decoration: none;
-  }
+	nav & {
+		text-decoration: none;
+	}
 
-  &:hover {
-    color: color-value(accent, light);
-  }
+	&:hover {
+		color: color-value(accent, light);
+	}
 }
 
 blockquote {
-  max-inline-size: 60ch;
-  margin-inline-start: 2px solid $color-accent;
+	max-inline-size: 60ch;
+	margin-inline-start: 2px solid $color-accent;
 
-  > cite {
-    display: block;
-    margin-block-start: 0.25rem;
-    font-weight: 700;
-  }
+	> cite {
+		display: block;
+		margin-block-start: 0.25rem;
+		font-weight: 700;
+	}
 }
 
 :focus-visible {
-  opacity: 1 !important;
-  outline: 4px solid currentcolor;
-  outline-offset: 4px;
+	opacity: 1 !important;
+	outline: 4px solid currentcolor;
+	outline-offset: 4px;
 }
 
 :focus:not(:focus-visible) {
-  outline: transparent;
+	outline: transparent;
 }
 
-  a[aria-current="true"] {
-    font-weight: bold;
-    text-decoration:  solid 3px underline !important;
-    text-underline-offset: 0.25em;
-  }
+a[aria-current="true"] {
+	font-weight: bold;
+	text-underline-offset: 0.25em;
+}

@@ -93,8 +93,8 @@ body {
   font-size: clamp(1rem, 0.93rem + 0.36vw, 1.25rem);
   line-height: 1.5;
   color: #293136;
-  background-color: #fefefe;
   text-wrap: pretty;
+  background-color: #fefefe;
 }
 body > * + * {
   margin-block-start: max(12vh, 3rem);
@@ -134,6 +134,12 @@ small {
   font-size: clamp(0.83rem, 0.8rem + 0.15vw, 0.94rem);
 }
 
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
+}
+
 a:not([class]) {
   font-weight: 700;
   color: #ff7300;
@@ -168,7 +174,6 @@ blockquote > cite {
 
 a[aria-current=true] {
   font-weight: bold;
-  text-decoration: solid 3px underline !important;
   text-underline-offset: 0.25em;
 }
 
