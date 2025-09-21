@@ -152,7 +152,6 @@ blockquote {
 }
 blockquote > cite {
   display: block;
-  inline-size: fit-content;
   margin-block-start: 0.25rem;
   font-weight: 700;
 }
