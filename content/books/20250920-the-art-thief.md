@@ -3,7 +3,7 @@ title: 'The Art Thief'
 author: "Michael Finkel"
 date: '2025-09-21'
 completed: true
-category: "fiction"
+category: "nonfiction"
 pages: 240
 id: 9781471186233
 rating: 3
