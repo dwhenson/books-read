@@ -1,6 +1,6 @@
 ---
 title: "The Remains of the Day"
-author: ""
+author: "Kazuo Ishiguro"
 date: '2026-08-20'
 completed: true
 category: "fiction"
