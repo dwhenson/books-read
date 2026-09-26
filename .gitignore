@@ -1,2 +1,5 @@
-/public
+/_site
 node_modules
+.DS_Store
+/resources
+assets/scss/main.css*
