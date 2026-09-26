@@ -13,7 +13,10 @@ layout: layouts/base.njk
 {#- Unfinished books are included here, but not on /books/. #}
 {% for group in collections.books | byYear %}
   <h2 style="view-transition-name: year-{{ group.year }}"><a href="/books/#{{ group.year }}">{{ group.year }}</a></h2>
-  <h3>{{ group.books.length }} {{ group.books.length | pluralize("book", "books") }}</h3>
+  <h3>
+    {{- group.books.length }} {{ group.books.length | pluralize("book", "books") }}
+    {%- if group.audiobooks %} ({{ group.audiobooks }} {{ group.audiobooks | pluralize("audiobook", "audiobooks") }}){% endif -%}
+  </h3>
   <h4 style="margin-block-start: 0.25em">
     <span class="fiction-normal">{{ group.fiction }} fiction</span> &amp;
     <span class="nonfiction-normal">{{ group.nonfiction }} non-fiction</span>
@@ -22,6 +25,7 @@ layout: layouts/base.njk
     {%- for entry in group.books %}
     <a href="{{ entry.url }}">
       {%- set book = entry.data %}
+      {%- set showAudiobookBadge = true %}
       {% include "partials/bookcover.njk" %}
     </a>
     {%- endfor %}

@@ -1,4 +1,7 @@
-{#- Expects `book` to be the book's data (front matter). -#}
+{#- Expects `book` to be the book's data (front matter). Set `showAudiobookBadge` to label audiobook covers. -#}
 <div class="{{ book.category }}">
+    {%- if showAudiobookBadge and book.audiobook %}
+    <span class="audiobook-badge">Audiobook</span>
+    {%- endif %}
     <img class="cover-image" src="https://images-eu.bookshop.org/images/{{ book.id }}.jpg" alt="{{ book.title }}" width="420" height="640" style="view-transition-name: image-{{ book.id }}">
 </div>

@@ -24,6 +24,7 @@ layout: layouts/base.njk
           <span class="{{ book.category }}-dark bold">
             {{ book.category | humanize }}
           </span>
+          {%- if book.audiobook %} | Audiobook{% endif %}
         </p>
         {% include "partials/rating.njk" %}
         <p>{{ book.review }}</p>

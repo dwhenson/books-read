@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-{%- set book = { title: title, category: category, id: id, rating: rating } %}
+{%- set book = { title: title, category: category, id: id, rating: rating, audiobook: audiobook } %}
 {%- set year = page.date | year %}
 <h1
   class="book-detail {{ category }}-normal"
@@ -13,12 +13,15 @@ layout: layouts/base.njk
 <p>
   {% if completed === false -%}
   Did not finish &middot;
+  {%- elif audiobook -%}
+  Listened to during
   {%- else -%}
   Finished during
   {%- endif %}
   <a href="/books/#{{ year }}">{{ year }}</a>
   |
   <span class="{{ category }}-normal">{{ category | humanize }}</span>
+  {%- if audiobook %} | Audiobook{% endif %}
 </p>
 {% include "partials/rating.njk" %}
 

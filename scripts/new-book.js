@@ -1,18 +1,19 @@
 /**
  * Creates a new book from the template below.
- * Usage: npm run new -- <yyyymmdd> "<Book Title>" <fiction|nonfiction>
+ * Usage: npm run new -- <yyyymmdd> "<Book Title>" <fiction|nonfiction> [audiobook]
  */
 import { existsSync, writeFileSync } from "node:fs";
 
-const [finished, title, category] = process.argv.slice(2);
+const [finished, title, category, format] = process.argv.slice(2);
 
 if (
   !/^\d{8}$/.test(finished ?? "") ||
   !title ||
-  !["fiction", "nonfiction"].includes(category)
+  !["fiction", "nonfiction"].includes(category) ||
+  (format !== undefined && format !== "audiobook")
 ) {
   console.error(
-    'Usage: npm run new -- <yyyymmdd> "<Book Title>" <fiction|nonfiction>',
+    'Usage: npm run new -- <yyyymmdd> "<Book Title>" <fiction|nonfiction> [audiobook]',
   );
   process.exit(1);
 }
@@ -38,6 +39,7 @@ title: "${title.replace(/"/g, '\\"')}"
 author: ""
 date: '${date}'
 completed: true
+audiobook: ${format === "audiobook"}
 category: "${category}"
 pages:
 id:

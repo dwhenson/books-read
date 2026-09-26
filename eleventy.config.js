@@ -49,6 +49,7 @@ export default function (eleventyConfig) {
       nonfiction: yearBooks.filter(
         (book) => book.data.category === "nonfiction",
       ).length,
+      audiobooks: yearBooks.filter((book) => book.data.audiobook).length,
     }));
   });
 

@@ -19,4 +19,10 @@ To add a new book, pass the date finished (`yyyymmdd`), the title and the catego
 npm run new -- 20260926 "Book Title" fiction
 ```
 
-This creates `content/books/{{yyyymmdd}}-{{book-title}}.md`. Fill in the author, pages, bookshop `id` (ISBN), rating and review. Set `completed: false` for a book you didn't finish: it will show on the Bookshelf, but not on the Books Read list.
+For an audiobook, add `audiobook` to the end:
+
+```sh
+npm run new -- 20260926 "Book Title" fiction audiobook
+```
+
+This creates `content/books/{{yyyymmdd}}-{{book-title}}.md`. Fill in the author, pages, bookshop `id` (ISBN), rating and review. Set `completed: false` for a book you didn't finish: it will show on the Bookshelf, but not on the Books Read list. Set `audiobook: true` for a book you listened to: it's labelled as an audiobook everywhere it appears.
