@@ -39,9 +39,9 @@ layout: layouts/base.njk
   {%- set older = collections.books | olderBook(page) %}
   {%- set newer = collections.books | newerBook(page) %}
   {%- if older %}
-  <a href="{{ older.url }}">Previous</a>
+  <a href="{{ older.url }}" rel="prev">Previous</a>
   {%- endif %}
   {%- if newer %}
-  <a class="next" href="{{ newer.url }}">Next</a>
+  <a href="{{ newer.url }}" rel="next">Next</a>
   {%- endif %}
 </section>
