@@ -1,0 +1,7 @@
+{#- Expects `book` to be the book's data (front matter). -#}
+<div
+  class="rating {{ book.category }}-normal"
+  style="--rating: {{ book.rating }};"
+  role="img"
+  aria-label="Rating: {{ book.rating }} {{ book.rating | pluralize("star", "stars") }} out of 5."
+></div>

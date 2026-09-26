@@ -21,3 +21,10 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+.rating-guide {
+  --starred-color: #ff7300;
+
+  display: flex;
+  flex-direction: column-reverse;
+}

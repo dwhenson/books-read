@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+---
+{{ content | safe }}
+
+<h1>{{ title }}</h1>
+
+<blockquote>
+  "I cannot remember the books I've read any more than the meals I have eaten; even so, they have made me."
+  <cite style="margin-inline-start: 2em;"><br>Ralph Waldo Emerson</cite>
+</blockquote>
+
+{#- Unfinished books are included here, but not on /books/. #}
+{% for group in collections.books | byYear %}
+  <h2 style="view-transition-name: year-{{ group.year }}"><a href="/books/#{{ group.year }}">{{ group.year }}</a></h2>
+  <h3>{{ group.books.length }} {{ group.books.length | pluralize("book", "books") }}</h3>
+  <h4 style="margin-block-start: 0.25em">
+    <span class="fiction-normal">{{ group.fiction }} fiction</span> &amp;
+    <span class="nonfiction-normal">{{ group.nonfiction }} non-fiction</span>
+  </h4>
+  <div class="bookcover-grid">
+    {%- for entry in group.books %}
+    <a href="{{ entry.url }}">
+      {%- set book = entry.data %}
+      {% include "partials/bookcover.njk" %}
+    </a>
+    {%- endfor %}
+  </div>
+{% endfor %}

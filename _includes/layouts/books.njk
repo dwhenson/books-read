@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+<h1>{{ title }}</h1>
+
+{% for group in collections.booksRead | byYear %}
+<section class="book-list" style="--flow-space: 4em">
+  <h2
+    id="{{ group.year }}"
+    class="sticky-header"
+    style="view-transition-name: year-{{ group.year }}"
+  >{{ group.year }}</h2>
+  <ul role="list" class="flow-content">
+    {%- for entry in group.books %}
+    {%- set book = entry.data %}
+    <li class="book-list-item {{ book.category }}">
+      {% include "partials/bookcover.njk" %}
+      <div class="book-content flow-content" style="--flow-space: 0.75rem">
+        <h3 style="view-transition-name: header-{{ book.id }}">
+          <a class="{{ book.category }}-normal" href="{{ entry.url }}">{{ book.title }}</a>
+        </h3>
+        <p>
+          By <strong>{{ book.author }}</strong> |
+          <span class="{{ book.category }}-dark bold">
+            {{ book.category | humanize }}
+          </span>
+        </p>
+        {% include "partials/rating.njk" %}
+        <p>{{ book.review }}</p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{% endfor %}

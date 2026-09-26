@@ -1,0 +1,12 @@
+<footer>
+    <nav aria-label="Footer">
+        <ul role="list">
+          {%- for item in nav %}
+          <li>
+            <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          </li>
+          {%- endfor %}
+        </ul>
+    </nav>
+    <small>Made with <a href="https://www.11ty.dev/">Eleventy</a>.</small>
+</footer>

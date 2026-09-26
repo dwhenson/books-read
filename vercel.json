@@ -1,0 +1,12 @@
+{
+  "framework": "eleventy",
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "redirects": [
+    {
+      "source": "/books/20250504-girl-who-kicked-over-the--hornets-nest/",
+      "destination": "/books/20250504-girl-who-kicked-over-the-hornets-nest/",
+      "permanent": true
+    }
+  ]
+}

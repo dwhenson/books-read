@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+{%- set book = { title: title, category: category, id: id, rating: rating } %}
+{%- set year = page.date | year %}
+<h1
+  class="book-detail {{ category }}-normal"
+  style="view-transition-name: header-{{ id }}"
+>
+  {{ title }}
+</h1>
+<h2>By {{ author }}</h2>
+<p>
+  {% if completed === false -%}
+  Did not finish &middot;
+  {%- else -%}
+  Finished during
+  {%- endif %}
+  <a href="/books/#{{ year }}">{{ year }}</a>
+  |
+  <span class="{{ category }}-normal">{{ category | humanize }}</span>
+</p>
+{% include "partials/rating.njk" %}
+
+<section class="book-detail">
+  {% include "partials/bookcover.njk" %}
+  <div
+    class="flow-content"
+    style="--flow-space: 1em; --star-size: 2em"
+  >
+    {{ content | safe }}
+  </div>
+</section>
+
+<section class="pagination">
+  {%- set older = collections.books | olderBook(page) %}
+  {%- set newer = collections.books | newerBook(page) %}
+  {%- if older %}
+  <a href="{{ older.url }}">Previous</a>
+  {%- endif %}
+  {%- if newer %}
+  <a class="next" href="{{ newer.url }}">Next</a>
+  {%- endif %}
+</section>

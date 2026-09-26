@@ -5,15 +5,11 @@
     <burger-menu max-width="550">
       <nav class="navigation" aria-label="Site">
         <ul role="list">
+          {%- for item in nav %}
           <li>
-            <a href="/" aria-current='{{  eq .Page.RelPermalink "/" }}'>Bookshelf</a>
+            <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
           </li>
-          <li>
-            <a href="/ratings/" aria-current='{{  eq .Page.RelPermalink "/ratings/" }}'  >Ratings</a>
-          </li>
-          <li>
-            <a href="/books/" aria-current='{{  eq .Page.RelPermalink "/books/" }}'  >Books Read</a>
-          </li>
+          {%- endfor %}
         </ul>
       </nav>
     </burger-menu>

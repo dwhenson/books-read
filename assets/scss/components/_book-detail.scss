@@ -14,3 +14,8 @@
     gap: space-value(space-2xl);
   }
 }
+
+// Keeps the spacing the original (Hugo) markup produced below the rating.
+section.book-detail {
+  --flow-space: 2em;
+}
