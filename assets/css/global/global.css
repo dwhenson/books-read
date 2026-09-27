@@ -1,17 +1,15 @@
-@use "../abstracts" as *;
-
 @view-transition {
 	navigation: auto;
 }
 
 body {
 	font-family: system-ui;
-	font-family: $ff-body;
-	font-size: font-value(step-0);
+	font-family: var(--font-body);
+	font-size: var(--step-0);
 	line-height: 1.5;
-	color: $color-dark;
+	color: var(--color-dark);
 	text-wrap: pretty;
-	background-color: $color-light;
+	background-color: var(--color-light);
 
 	> * + * {
 		margin-block-start: max(12vh, 3rem);
@@ -23,25 +21,25 @@ main {
 }
 
 :where(h1, h2, h3, h4) {
-	font-family: $ff-headings;
+	font-family: var(--font-headings);
 	line-height: 1.1;
 	text-wrap: balance;
 }
 
 h1 {
-	font-size: font-value(step-5);
+	font-size: var(--step-5);
 }
 
 h2 {
-	font-size: font-value(step-4);
+	font-size: var(--step-4);
 }
 
 h3 {
-	font-size: font-value(step-3);
+	font-size: var(--step-3);
 }
 
 h4 {
-	font-size: font-value(step-2);
+	font-size: var(--step-2);
 }
 
 p {
@@ -49,7 +47,7 @@ p {
 }
 
 small {
-	font-size: font-value(step--1);
+	font-size: var(--step--1);
 }
 
 h1 a,
@@ -59,8 +57,8 @@ h3 a {
 }
 
 a:not([class]) {
-	font-weight: $fw-700;
-	color: color-value(accent, normal);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-accent);
 	transition: all 200ms ease;
 
 	nav & {
@@ -68,13 +66,13 @@ a:not([class]) {
 	}
 
 	&:hover {
-		color: color-value(accent, light);
+		color: var(--color-accent-light);
 	}
 }
 
 blockquote {
 	max-inline-size: 60ch;
-	margin-inline-start: 2px solid $color-accent;
+	margin-inline-start: 2px solid #ff7300;
 
 	> cite {
 		display: block;

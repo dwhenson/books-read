@@ -1,5 +1,3 @@
-@use "../abstracts" as *;
-
 .rating {
   --star-color: transparent;
   --percent: calc(var(--rating) / 5 * 100%);
@@ -17,7 +15,7 @@
       var(--star-color) var(--percent)
     );
     background-clip: text;
-    content: "★★★★★";
+    content: "\2605\2605\2605\2605\2605"; /* ★★★★★ */
     -webkit-text-fill-color: transparent;
   }
 }

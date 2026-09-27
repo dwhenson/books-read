@@ -1,0 +1,19 @@
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+
+  > * {
+    flex-basis: fit-content;
+  }
+
+  @media (width >= 40em) {
+    flex-direction: row;
+    gap: var(--space-2xl);
+  }
+}
+
+/* Keeps the spacing the original (Hugo) markup produced below the rating. */
+section.book-detail {
+  --flow-space: 2em;
+}

@@ -13,6 +13,14 @@ Cover images from: [Bookshop.org](https://uk.bookshop.org/).
 - `npm run build` to build the site into `_site/`.
 - `npm run check` to build, validate the HTML and check internal links.
 
+## Styles
+
+Styles are plain CSS in `assets/css/`, split into small files by purpose (`tokens.css` for design tokens, then `global/`, `components/` and `utilities/`). There's no build step: the files are copied as they are and loaded by `main.css`.
+
+To add a stylesheet, create it in the right folder and add an `@import` line for it in `assets/css/main.css`. Files later in that list win over earlier ones when selectors are equally specific.
+
+## Adding books
+
 To add a new book, pass the date finished (`yyyymmdd`), the title and the category:
 
 ```sh

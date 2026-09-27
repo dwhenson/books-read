@@ -1,0 +1,9 @@
+footer {
+  margin-block-end: var(--space-l);
+
+  ul {
+    display: flex;
+    gap: var(--space-xl);
+    text-decoration: none;
+  }
+}

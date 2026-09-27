@@ -1,0 +1,61 @@
+.bookcover-grid {
+  display: grid;
+  border-radius: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 150px));
+  gap: var(--space-3xs);
+
+  div {
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .fiction {
+    --overlay-color: var(--color-fiction-dark);
+  }
+
+  .nonfiction {
+    --overlay-color: var(--color-nonfiction-dark);
+  }
+
+  :is(.fiction, .nonfiction) {
+    border: 3px solid var(--overlay-color);
+    border-radius: 0.25em;
+
+    &::after {
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-start: 0;
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      opacity: 0;
+      background: var(--overlay-color);
+      transition: opacity 300ms ease;
+      content: "";
+    }
+
+    &:hover::after {
+      opacity: 0.2;
+    }
+  }
+}
+
+.audiobook-badge {
+  position: absolute;
+  z-index: 1;
+  inset-block-end: var(--space-3xs);
+  inset-inline-start: var(--space-3xs);
+  padding: 0.1em 0.5em;
+  border-radius: 0.25em;
+  background: var(--color-dark);
+  color: var(--color-light);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+}

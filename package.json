@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "html-validate": "^11.16.0",
-    "sass": "^1.105.0"
+    "html-validate": "^11.16.0"
   }
 }

@@ -16,8 +16,8 @@ export default function (eleventyConfig) {
   );
 
   eleventyConfig.addPassthroughCopy({ "assets/js": "js" });
+  eleventyConfig.addPassthroughCopy({ "assets/css": "css" });
   eleventyConfig.addPassthroughCopy({ static: "/" });
-  eleventyConfig.addWatchTarget("assets/scss/");
 
   eleventyConfig.addCollection("books", (collectionApi) =>
     collectionApi.getFilteredByTag("books").sort(byDateDescending),
