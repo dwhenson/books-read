@@ -3,10 +3,9 @@
   z-index: 100000;
   inset-inline-start: 1rem;
   inset-block-start: 1rem;
-  display: inline-block;
   padding-inline: 1rem;
   padding-block: 0.7rem 0.5rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-accent-dark);
@@ -18,19 +17,11 @@
   background: var(--color-accent-dark);
 }
 
+/* Visually hidden until focused */
 .skip-link:not(:focus) {
-  position: absolute;
   inline-size: 1px;
-  block-size: auto;
-  margin: 0;
   padding: 0;
-  border: 0;
   overflow: hidden;
   white-space: nowrap;
-  clip: rect(0 0 0 0);
-}
-
-/* Remove necessary focus style as main is the :target */
-main:focus {
-  outline: none;
+  clip-path: inset(50%);
 }

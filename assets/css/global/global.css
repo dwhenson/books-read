@@ -3,10 +3,8 @@
 }
 
 body {
-	font-family: system-ui;
 	font-family: var(--font-body);
 	font-size: var(--step-0);
-	line-height: 1.5;
 	color: var(--color-dark);
 	text-wrap: pretty;
 	background-color: var(--color-light);
@@ -16,14 +14,8 @@ body {
 	}
 }
 
-main {
-	grid-template-rows: 1fr;
-}
-
 :where(h1, h2, h3, h4) {
 	font-family: var(--font-headings);
-	line-height: 1.1;
-	text-wrap: balance;
 }
 
 h1 {
@@ -72,12 +64,13 @@ a:not([class]) {
 
 blockquote {
 	max-inline-size: 60ch;
-	margin-inline-start: 2px solid #ff7300;
+	padding-inline-start: var(--space-s);
+	border-inline-start: 2px solid var(--color-accent);
 
 	> cite {
 		display: block;
 		margin-block-start: 0.25rem;
-		font-weight: 700;
+		font-weight: var(--font-weight-bold);
 	}
 }
 
@@ -87,11 +80,7 @@ blockquote {
 	outline-offset: 4px;
 }
 
-:focus:not(:focus-visible) {
-	outline: transparent;
-}
-
 a[aria-current="page"] {
-	font-weight: bold;
+	font-weight: var(--font-weight-bold);
 	text-underline-offset: 0.25em;
 }

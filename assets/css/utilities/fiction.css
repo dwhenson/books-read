@@ -1,8 +1,3 @@
-.fiction-light {
-  color: var(--color-fiction-light);
-  transition: all 200ms ease;
-}
-
 .fiction-normal {
   font-weight: var(--font-weight-bold);
   color: var(--color-fiction);
@@ -11,18 +6,8 @@
 
 .fiction-dark {
   color: var(--color-fiction-dark);
-  transition: all 200ms ease;
-}
-
-a.fiction-light:hover {
-  color: var(--color-fiction-dark);
 }
 
 a.fiction-normal:hover {
-  font-weight: var(--font-weight-bold);
-  color: var(--color-fiction-light);
-}
-
-a.fiction-dark:hover {
   color: var(--color-fiction-light);
 }

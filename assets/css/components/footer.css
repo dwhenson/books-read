@@ -4,6 +4,5 @@ footer {
   ul {
     display: flex;
     gap: var(--space-xl);
-    text-decoration: none;
   }
 }

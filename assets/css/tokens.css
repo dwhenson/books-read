@@ -30,7 +30,6 @@
   --step-5: clamp(2.49rem, calc(1.7rem + 3.96vw), 5.26rem);
   --font-body: system-ui, sans-serif;
   --font-headings: system-ui, sans-serif;
-  --font-weight-regular: 400;
   --font-weight-bold: 700;
 
   /* SIZING */
@@ -54,10 +53,8 @@
   --space-2xl-3xl: clamp(4rem, calc(3rem + 5vw), 7.5rem);
 
   /*
-   * BREAKPOINTS
-   * Custom properties can't be used in media queries, so these are written
-   * out where needed: medium = (width >= 40em), large = (width >= 60em).
-   * Unused sizes from the original Sass map: small 40rem, medium 50rem,
-   * large 70rem.
+   * BREAKPOINT
+   * Custom properties can't be used in media queries, so the one breakpoint
+   * is written out where needed: @media (width >= 40em).
    */
 }

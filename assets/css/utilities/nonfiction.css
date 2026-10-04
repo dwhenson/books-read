@@ -1,8 +1,3 @@
-.nonfiction-light {
-  color: var(--color-nonfiction-light);
-  transition: all 200ms ease;
-}
-
 .nonfiction-normal {
   font-weight: var(--font-weight-bold);
   color: var(--color-nonfiction);
@@ -11,17 +6,8 @@
 
 .nonfiction-dark {
   color: var(--color-nonfiction-dark);
-  transition: all 200ms ease;
-}
-
-a.nonfiction-light:hover {
-  color: var(--color-nonfiction-dark);
 }
 
 a.nonfiction-normal:hover {
-  color: var(--color-nonfiction-light);
-}
-
-a.nonfiction-dark:hover {
   color: var(--color-nonfiction-light);
 }

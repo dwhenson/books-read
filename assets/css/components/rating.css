@@ -21,7 +21,7 @@
 }
 
 .rating-guide {
-  --starred-color: #ff7300;
+  --starred-color: var(--color-accent);
 
   display: flex;
   flex-direction: column-reverse;

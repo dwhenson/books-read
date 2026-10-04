@@ -23,7 +23,6 @@
   position: absolute;
   z-index: 10;
   inset-inline-start: 50%;
-  display: block;
   inline-size: 24px;
   block-size: 3px;
   margin-inline-start: -12px;
@@ -35,7 +34,6 @@
 
 .burger-menu-bar {
   inset-block-start: 50%;
-  opacity: 1;
 }
 
 .burger-menu-bar::before,
@@ -73,9 +71,7 @@
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu-trigger:focus-visible {
-  z-index: 10;
-  opacity: 1 !important;
-  outline: 3px dashed var(--color-light) !important;
+  outline: 3px dashed var(--color-light);
   outline-offset: 3px;
 }
 
@@ -93,7 +89,6 @@
   visibility: hidden;
   background-color: var(--color-accent);
   transition: opacity 300ms;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Hamburger menu panel content size and positioning */
