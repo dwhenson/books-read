@@ -1,7 +1,7 @@
 ---
 title: "Wild Fell"
 author: "Lee Schofield"
-date: '2026-10-03'
+date: '2026-10-09'
 completed: true
 audiobook: true
 category: "nonfiction"
