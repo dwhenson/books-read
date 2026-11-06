@@ -10,13 +10,6 @@ html {
   text-size-adjust: none;
 }
 
-/* Smooth scrolling, unless the user has asked for reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 /* Remove default margin in favour of better control in authored CSS */
 body,
 h1,
